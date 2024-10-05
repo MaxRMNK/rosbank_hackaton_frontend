@@ -1,0 +1,6 @@
+/.git
+/.vscode
+.next
+node_modules
+build
+next-env.d.ts
