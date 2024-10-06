@@ -10,6 +10,7 @@ import React from 'react';
 import { Header } from '@/source/widgets/header';
 
 import userPhoto from '@/source/shared/images/user-photo.jpg';
+import { Notification } from '@/source/widgets/notification/notification';
 
 export const HomePage: React.FC = () => {
   const [links, setLinks] = React.useState([
@@ -31,12 +32,37 @@ export const HomePage: React.FC = () => {
     lastName: 'Иванов' || '',
   });
 
+  const [report, setReport] = React.useState({
+    title: '4 запроса на развитие навыков ожидают согласования' || '',
+    description:
+      'У вас 4 новых запроса от Андрея Сухова и Кирилла Федорова на развитие навыков React, Python' ||
+      '',
+  });
+
+  const handlerReadMore = () => {
+    console.log('Подробнее');
+  };
+  const handlerApprove = () => {
+    console.log('Согласовать');
+  };
+
   return (
     <>
       <Header links={links} userInfo={userInfo} />
 
-      <main>Main</main>
-      <footer className="ddd">Footer</footer>
+      {(report.title || report.description) && (
+        <Notification
+          title={report.title}
+          description={report.description}
+          readMore={handlerReadMore}
+          approve={handlerApprove}
+        />
+      )}
+
+      <main>
+        <p>sda</p>
+      </main>
+      {/* <footer className="ddd">Footer</footer> */}
     </>
   );
 };
