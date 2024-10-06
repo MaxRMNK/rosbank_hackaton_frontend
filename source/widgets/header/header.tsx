@@ -1,25 +1,24 @@
-import React, { FC } from 'react';
+'use client';
+
+import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
+
+import { HeaderMenu } from '@/source/features/header-menu';
 import { typeHeaderProps } from './types';
+import { headerMenuProps } from '@/source/features/header-menu/types';
 
-import Link from 'next/link';
-import Image from 'next/image';
+import { LogoHeader } from '@/source/shared/logo-header';
 
-export const Header: FC<typeHeaderProps> = props => {
-  const { logo, links, ...otherProps } = props;
+export const Header: React.FC<typeHeaderProps & headerMenuProps> = props => {
+  const { links, userInfo } = props;
 
   return (
     <header className={cn(classes.header)}>
-      <Link href="/">
-        <Image
-          className={cn(classes.header__logo)}
-          src={logo.src}
-          alt="Росбанк"
-          width={logo.width}
-          height={logo.height}
-        />
-      </Link>
+      <LogoHeader />
+
+      <HeaderMenu links={links} />
+
       {/* {otherProps.avatar && (
         <Image
           className={cn(classes.header__logo)}

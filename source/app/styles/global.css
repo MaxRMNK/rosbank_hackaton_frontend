@@ -10,12 +10,12 @@
   --blue-dark-color: #00274f;
   --red-color: #e10d34;
   /* --red-crimson-color: #e4003a; */
-  /* --yellow-cumulus-color: #f5f3c5;
-  --yellow-primrose-color: #e7e49a; */
+  --yellow-cumulus-color: #f5f3c5;
+  --yellow-primrose-color: #e7e49a;
 
   --font-s: 10px/16px var(--font-manrope);
   --font-m: 12px/22px var(--font-manrope);
-  /* --font-m-bold: 12px/24px var(--font-manrope); */
+  --font-m-bold: 12px/24px var(--font-manrope);
   --font-l: 14px/24px var(--font-manrope);
   /* --font-l-bold: 10px/16px var(--font-manrope); */
   --font-xl: 14px/24px var(--font-manrope);
