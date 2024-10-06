@@ -9,6 +9,7 @@ import { typeHeaderProps } from './types';
 import { headerMenuProps } from '@/source/features/header-menu/types';
 
 import { LogoHeader } from '@/source/shared/logo-header';
+import { HeaderUserInfo } from '@/source/features/header-user';
 
 export const Header: React.FC<typeHeaderProps & headerMenuProps> = props => {
   const { links, userInfo } = props;
@@ -19,15 +20,7 @@ export const Header: React.FC<typeHeaderProps & headerMenuProps> = props => {
 
       <HeaderMenu links={links} />
 
-      {/* {otherProps.avatar && (
-        <Image
-          className={cn(classes.header__logo)}
-          src={otherProps.avatar.src}
-          alt=""
-          width={image.width}
-          height={image.height}
-        />
-      )} */}
+      <HeaderUserInfo userInfo={userInfo} />
     </header>
   );
 };

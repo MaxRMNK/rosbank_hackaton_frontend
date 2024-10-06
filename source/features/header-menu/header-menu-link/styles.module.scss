@@ -11,10 +11,9 @@
   // line-height: 24px;
   color: var(--black-color);
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
   background-color: transparent;
   border: none;
-  background-color: var(--yellow-cumulus-color);
 
   &:hover {
     opacity: 0.7;
@@ -52,7 +51,8 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  background-color: var(--red-color);
+  background-color: var(--white-smoke-color);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
 
   &.open {
     display: flex;
