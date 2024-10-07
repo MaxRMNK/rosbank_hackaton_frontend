@@ -11,6 +11,7 @@ import userPhoto from '@/source/shared/images/user-photo.jpg';
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
 import { WelcomeInfo } from '@/source/widgets/welcome-info';
+import { Indicators } from '@/source/widgets/indicators';
 
 export const HomePage: React.FC = () => {
   const [links, setLinks] = React.useState([
@@ -61,6 +62,7 @@ export const HomePage: React.FC = () => {
 
       <main className={cn(classes.main)}>
         <WelcomeInfo />
+        <Indicators />
         <p>sda</p>
       </main>
       {/* <footer className="ddd">Footer</footer> */}

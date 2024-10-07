@@ -1,0 +1,18 @@
+.indicators {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  padding: 0 100px 60px 100px;
+  width: 100%;
+}
+.card {
+  padding: 30px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 2px solid var(--red-color);
+}
+
+.busFactor {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
