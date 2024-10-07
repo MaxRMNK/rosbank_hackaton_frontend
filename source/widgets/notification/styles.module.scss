@@ -16,7 +16,7 @@
 .message {
   background-image: url('./images/info-icon.svg');
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left 0 top 4px;
   padding: 0 0 0 44px;
 }
 
@@ -47,7 +47,7 @@
   transition: 0.3s;
 
   &:not(:disabled):hover {
-    background-color: var(--grey-color);
+    background-color: var(--grey-light-color);
   }
 
   &:not(:disabled):active {

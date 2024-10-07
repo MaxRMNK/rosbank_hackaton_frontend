@@ -3,14 +3,14 @@
 // import Image from 'next/image';
 // import styles from './styles.module.scss';
 import React from 'react';
-// import React, { ReactNode } from 'react';
-
-// import { Pagination } from "antd";
-
-import { Header } from '@/source/widgets/header';
+import cn from 'classnames';
+import classes from './styles.module.scss';
 
 import userPhoto from '@/source/shared/images/user-photo.jpg';
-import { Notification } from '@/source/widgets/notification/notification';
+
+import { Header } from '@/source/widgets/header';
+import { Notification } from '@/source/widgets/notification';
+import { WelcomeInfo } from '@/source/widgets/welcome-info';
 
 export const HomePage: React.FC = () => {
   const [links, setLinks] = React.useState([
@@ -59,7 +59,8 @@ export const HomePage: React.FC = () => {
         />
       )}
 
-      <main>
+      <main className={cn(classes.main)}>
+        <WelcomeInfo />
         <p>sda</p>
       </main>
       {/* <footer className="ddd">Footer</footer> */}
