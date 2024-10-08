@@ -6,7 +6,9 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 
-import userPhoto from '@/source/shared/images/user-photo.jpg';
+// import userPhoto from '@/source/shared/images/user-photo.jpg';
+import userData from '@/source/shared/user.json';
+import summaryData from '@/source/shared/demo-summary.json';
 
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
@@ -27,18 +29,20 @@ export const HomePage: React.FC = () => {
     },
   ]);
 
-  const [userInfo, setUserInfo] = React.useState({
-    userPhoto: userPhoto || '',
-    firstName: 'Константин' || '',
-    lastName: 'Иванов' || '',
-  });
+  const [userInfo, setUserInfo] = React.useState(userData);
+  // const [userInfo, setUserInfo] = React.useState({
+  //   userPhoto: userData.userPhoto || '',
+  //   firstName: userData.firstName || '',
+  //   lastName: userData.lastName || '',
+  // });
 
-  const [report, setReport] = React.useState({
-    title: '4 запроса на развитие навыков ожидают согласования' || '',
-    description:
-      'У вас 4 новых запроса от Андрея Сухова и Кирилла Федорова на развитие навыков React, Python' ||
-      '',
-  });
+  const [report, setReport] = React.useState(summaryData.notice);
+  // const [report, setReport] = React.useState({
+  //   title: '4 запроса на развитие навыков ожидают согласования' || '',
+  //   description:
+  //     'У вас 4 новых запроса от Андрея Сухова и Кирилла Федорова на развитие навыков React, Python' ||
+  //     '',
+  // });
 
   const handlerReadMore = () => {
     console.log('Подробнее');
@@ -61,7 +65,7 @@ export const HomePage: React.FC = () => {
       )}
 
       <main className={cn(classes.main)}>
-        <WelcomeInfo />
+        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
         <Indicators />
         <p>sda</p>
       </main>

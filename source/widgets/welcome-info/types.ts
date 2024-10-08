@@ -2,6 +2,24 @@ import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export interface typeWelcomeInfoProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  // links: headerMenuProps & headerMenuLinkWithChildren[];
-  // userInfo: typeUserInfoProps['userInfo'];
+  welcomeData: {
+    aboutTeam: {
+      item: string;
+    }[];
+    description: string;
+    tags: {
+      title: string;
+    }[];
+    managers: {
+      jobPosition: string;
+      photo: string | null;
+      firstName: string;
+      lastName: string;
+    }[];
+    links: {
+      key: string;
+      name: string;
+      link: string;
+    }[];
+  };
 }

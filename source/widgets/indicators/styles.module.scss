@@ -12,7 +12,78 @@
   border: 2px solid var(--red-color);
 }
 
+.title {
+  margin-bottom: 20px;
+  padding-left: 34px;
+  font-size: 20px;
+  line-height: 27px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &.titleBusFactor {
+    margin-bottom: 10px;
+    background-image: url('./images/bas-factor-icon.svg');
+    background-size: 28px auto;
+  }
+
+  &.titleTeam {
+    background-image: url('./images/team-icon.svg');
+    background-size: 26px auto;
+  }
+
+  &.titleSkills {
+    background-image: url('./images/skills-icon.svg');
+    background-size: 22px auto;
+  }
+}
+
 .busFactor {
   background-color: var(--red-color);
   color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+
+  .number {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+  }
+}
+
+.list {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  color: var(--grey-dark-color);
+  border-top: 1px solid var(--grey-light-color);
+
+  .item {
+    padding: 10px 0;
+    // border-bottom: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-light-color);
+  }
+}
+
+.value {
+  float: right;
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: var(--grey-light-color);
+
+  &.alert {
+    background-color: var(--red-light-color);
+  }
 }

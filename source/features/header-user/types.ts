@@ -4,7 +4,7 @@ import { StaticImageData } from 'next/image';
 export interface typeUserInfoProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   userInfo: {
-    userPhoto: StaticImageData;
+    userPhoto: StaticImageData | null;
     firstName: string;
     lastName: string;
   };
