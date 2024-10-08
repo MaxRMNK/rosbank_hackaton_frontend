@@ -6,6 +6,7 @@ export interface typeWelcomeInfoProps
     aboutTeam: {
       item: string;
     }[];
+    teamName: string;
     description: string;
     tags: {
       title: string;

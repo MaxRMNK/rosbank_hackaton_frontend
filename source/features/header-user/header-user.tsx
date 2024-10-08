@@ -3,9 +3,13 @@ import classes from './styles.module.scss';
 import { typeUserInfoProps } from './types';
 import Image from 'next/image';
 
-import DefaultAvatar from '@/source/shared/images/default-avatar.jpg';
+// import DefaultAvatar from '@/public/default-avatar.jpg';
 
-export const HeaderUserInfo: React.FC<typeUserInfoProps> = ({ userInfo }) => {
+export const HeaderUserInfo: React.FC<typeUserInfoProps> = props => {
+  const { userInfo } = props;
+
+  const DefaultAvatar = '/default-avatar.jpg';
+
   const name = (
     userInfo?.firstName +
     ' ' +

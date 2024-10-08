@@ -21,6 +21,33 @@ export const Indicators: React.FC<typeIndicatorsProps> = props => {
     },
   };
 
+  const fieldData = {
+    team: [
+      {
+        name: indicators.team.allEmployees,
+        title: 'Все сотрудники',
+        value: 21,
+      },
+      {
+        name: indicators.team.keyEmployees,
+        title: 'Ключевые сотрудники',
+        value: 11,
+      },
+    ],
+    skills: [
+      {
+        name: indicators.skills.normal,
+        title: 'Соответствуют требуемому уровню',
+        value: 11,
+      },
+      {
+        name: indicators.skills.attention,
+        title: 'Требуют развития',
+        value: 8,
+      },
+    ],
+  };
+
   return (
     <section className={cn(classes.indicators)}>
       <div className={cn(classes.card, classes.busFactor)}>

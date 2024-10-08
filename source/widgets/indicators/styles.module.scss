@@ -28,7 +28,7 @@
 
   &.titleTeam {
     background-image: url('./images/team-icon.svg');
-    background-size: 26px auto;
+    background-size: 28px auto;
   }
 
   &.titleSkills {
@@ -70,11 +70,14 @@
     padding: 10px 0;
     // border-bottom: 1px solid var(--grey-color);
     border-bottom: 1px solid var(--grey-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .value {
-  float: right;
+  // float: right;
   display: block;
   font-size: 11px;
   line-height: 16px;

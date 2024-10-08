@@ -3,7 +3,9 @@ import classes from './styles.module.scss';
 import { headerMenuProps } from './types';
 import { HeaderMenuLink } from './header-menu-link';
 
-export const HeaderMenu: React.FC<headerMenuProps> = ({ className, links }) => {
+export const HeaderMenu: React.FC<headerMenuProps> = props => {
+  const { className, links } = props;
+
   return (
     <nav className={cn(className, classes.headerMenu)}>
       <ul className={cn(className, classes.headerMenuWrapper)}>

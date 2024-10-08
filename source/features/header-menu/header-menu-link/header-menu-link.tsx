@@ -9,10 +9,9 @@ import Image from 'next/image';
 
 import arrow from './images/arrow.svg';
 
-export const HeaderMenuLink: React.FC<headerMenuLinkProps> = ({
-  className,
-  link,
-}) => {
+export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
+  const { className, link } = props;
+
   const [isOpen, setOpen] = React.useState(false);
 
   const visable = () => {

@@ -65,7 +65,7 @@ export const HomePage: React.FC = () => {
       )}
 
       <main className={cn(classes.main)}>
-        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
+        <WelcomeInfo welcomeData={summaryData.welcomeData} />
         <Indicators />
         <p>sda</p>
       </main>

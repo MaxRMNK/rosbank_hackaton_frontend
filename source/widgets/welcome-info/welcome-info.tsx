@@ -8,11 +8,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { TagList } from '@/source/shared/ui/tag-list';
 
-import userPhoto from '@/source/shared/images/user-photo.jpg';
-import DefaultAvatar from '@/source/shared/images/default-avatar.jpg';
+// import userPhoto from '@/public/user-photo.jpg';
+// import DefaultAvatar from '@/public/default-avatar.jpg';
 
 export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
   const { welcomeData } = props;
+
+  const DefaultAvatar = '/default-avatar.jpg';
 
   // const welcomeData = {
   //   aboutTeam: [
@@ -58,7 +60,7 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
   return (
     <section className={cn(classes.greeting)}>
       <div className={cn(classes.important)}>
-        <h2 className={cn(classes.title)}>Cамое важное о команде</h2>
+        <h2 className={cn(classes.title)}>Важное о команде</h2>
         {/* <p className={cn(classes.subtitle)}>:</p> */}
         <ul className={cn(classes.items)}>
           {welcomeData.aboutTeam &&
@@ -69,7 +71,7 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
       </div>
 
       <div className={cn(classes.about)}>
-        <h2 className={cn(classes.title)}>О команде</h2>
+        <h2 className={cn(classes.title)}>{welcomeData.teamName}</h2>
         <p className={cn(classes.description)}>{welcomeData.description}</p>
 
         <TagList tags={welcomeData.tags} className={cn(classes.tagList)} />
