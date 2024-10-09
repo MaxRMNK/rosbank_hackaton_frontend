@@ -2,8 +2,15 @@ import { HTMLAttributes, DetailedHTMLProps } from 'react';
 
 export interface typeIndicatorsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  // title: string;
-  // description: string;
-  // readMore: () => void;
-  // approve: () => void;
+  indicatorsData: {
+    busFactor: number;
+    team: {
+      name: string;
+      value: number;
+    }[];
+    skills: {
+      name: string;
+      value: number;
+    }[];
+  };
 }

@@ -1,0 +1,21 @@
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .userAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-light-color);
+  }
+
+  .userName {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+  }
+}

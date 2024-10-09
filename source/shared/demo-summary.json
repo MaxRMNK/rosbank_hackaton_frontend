@@ -30,26 +30,26 @@
     ],
     "links": [
       {
-        "key": "wiki",
-        "name": "Wiki",
+        "name": "wiki",
+        "title": "Wiki",
         "link": "https://ya.ru/search/?text=wiki"
       },
       {
-        "key": "jira",
-        "name": "Jira Board",
+        "name": "jira",
+        "title": "Jira Board",
         "link": "https://www.atlassian.com/ru/software/jira"
       }
     ]
   },
   "indicators": {
-    "busFactor": 6,
-    "team": {
-      "allEmployees": 21,
-      "keyEmployees": 11
-    },
-    "skills": {
-      "normal": 11,
-      "attention": 8
-    }
+    "busFactor": 8,
+    "team": [
+      { "name": "allEmployees", "value": 21 },
+      { "name": "keyEmployees", "value": 11 }
+    ],
+    "skills": [
+      { "name": "normal", "value": 11 },
+      { "name": "attention", "value": 8 }
+    ]
   }
 }

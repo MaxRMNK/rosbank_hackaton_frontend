@@ -18,8 +18,8 @@ export interface typeWelcomeInfoProps
       lastName: string;
     }[];
     links: {
-      key: string;
       name: string;
+      title: string;
       link: string;
     }[];
   };

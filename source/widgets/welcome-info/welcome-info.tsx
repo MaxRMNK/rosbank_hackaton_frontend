@@ -4,9 +4,10 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeWelcomeInfoProps } from './types';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { TagList } from '@/source/shared/ui/tag-list';
+import { TeamMember } from '@/source/features/team-member';
 
 // import userPhoto from '@/public/user-photo.jpg';
 // import DefaultAvatar from '@/public/default-avatar.jpg';
@@ -58,10 +59,9 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
   // const tags = [{ title: 'Омниканальные клиенты' }, { title: 'E-commerce' }];
 
   return (
-    <section className={cn(classes.greeting)}>
-      <div className={cn(classes.important)}>
+    <section className={cn(classes.summary)}>
+      <div className={cn(classes.report)}>
         <h2 className={cn(classes.title)}>Важное о команде</h2>
-        {/* <p className={cn(classes.subtitle)}>:</p> */}
         <ul className={cn(classes.items)}>
           {welcomeData.aboutTeam &&
             welcomeData.aboutTeam.map(itemList => (
@@ -70,7 +70,7 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
         </ul>
       </div>
 
-      <div className={cn(classes.about)}>
+      <div className={cn(classes.aboutTeam)}>
         <h2 className={cn(classes.title)}>{welcomeData.teamName}</h2>
         <p className={cn(classes.description)}>{welcomeData.description}</p>
 
@@ -83,18 +83,12 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
                 <h3 className={cn(classes.infoTitle)}>
                   {itemList.jobPosition}
                 </h3>
-                <div className={cn(classes.userInfo)}>
-                  <Image
-                    className={cn(classes.userAvatar)}
-                    src={itemList.photo || DefaultAvatar}
-                    alt=""
-                    width={100}
-                    height={100}
-                  />
-                  <span className={cn(classes.userName)}>
-                    {itemList.firstName} {itemList.lastName}
-                  </span>
-                </div>
+                <TeamMember
+                  className={cn(classes.details)}
+                  photo={itemList.photo}
+                  firstName={itemList.firstName}
+                  lastName={itemList.lastName}
+                />
               </div>
             ))}
 
@@ -105,11 +99,11 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
                 welcomeData.links.map(itemList => (
                   <Link
                     href={itemList.link}
-                    className={cn(classes.link, classes[itemList.key])}
+                    className={cn(classes.link, classes[itemList.name])}
                     target="_blank"
                     rel="nofollow noindex noopener"
                   >
-                    {itemList.name}
+                    {itemList.title}
                   </Link>
                 ))}
             </div>

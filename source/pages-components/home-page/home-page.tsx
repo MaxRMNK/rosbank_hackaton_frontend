@@ -51,6 +51,13 @@ export const HomePage: React.FC = () => {
     console.log('Согласовать');
   };
 
+  const handlerTeam = () => {
+    console.log('О команде');
+  };
+  const handlerSkills = () => {
+    console.log('О навыках');
+  };
+
   return (
     <>
       <Header links={links} userInfo={userInfo} />
@@ -66,7 +73,7 @@ export const HomePage: React.FC = () => {
 
       <main className={cn(classes.main)}>
         <WelcomeInfo welcomeData={summaryData.welcomeData} />
-        <Indicators />
+        <Indicators indicatorsData={summaryData.indicators} />
         <p>sda</p>
       </main>
       {/* <footer className="ddd">Footer</footer> */}
