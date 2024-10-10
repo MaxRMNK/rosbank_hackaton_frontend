@@ -1,12 +1,10 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeIndicatorsCardProps } from './types';
-// import Image from 'next/image';
 import Link from 'next/link';
-import { log } from 'console';
 
 export const IndicatorsCard: React.FC<typeIndicatorsCardProps> = props => {
-  const { type, title, fieldData, className } = props;
+  const { type, title, fieldData, handlerClick, className } = props;
 
   return (
     <div className={cn(className, classes.card)}>
@@ -32,7 +30,7 @@ export const IndicatorsCard: React.FC<typeIndicatorsCardProps> = props => {
           ))}
       </ul>
       <div className={cn(classes.linkWrapper)}>
-        <Link href={'#'} className={cn(classes.link)}>
+        <Link href={'#'} onClick={handlerClick} className={cn(classes.link)}>
           Подробнее
         </Link>
       </div>

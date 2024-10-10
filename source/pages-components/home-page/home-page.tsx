@@ -73,7 +73,11 @@ export const HomePage: React.FC = () => {
       <main className={cn(classes.main)}>
         <WelcomeInfo welcomeData={summaryData.welcomeData} />
 
-        <Indicators indicatorsData={summaryData.indicators} />
+        <Indicators
+          indicatorsData={summaryData.indicators}
+          handlerTeam={handlerTeam}
+          handlerSkills={handlerSkills}
+        />
         <p>sda</p>
       </main>
       {/* <footer className="ddd">Footer</footer> */}
