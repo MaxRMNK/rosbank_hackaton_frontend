@@ -1,0 +1,95 @@
+.card {
+  padding: 30px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 2px solid var(--red-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleCard {
+  margin-bottom: 20px;
+  padding-left: 34px;
+  font-size: 20px;
+  line-height: 27px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  &.team {
+    background-image: url('./images/team-icon.svg');
+    background-size: 28px auto;
+  }
+
+  &.skills {
+    background-image: url('./images/skills-icon.svg');
+    background-size: 22px auto;
+  }
+}
+
+.list {
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  color: var(--grey-dark-color);
+  border-top: 1px solid var(--grey-light-color);
+
+  .item {
+    padding: 10px 0;
+    // border-bottom: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // &.allEmployees {
+    // }
+    // &.keyEmployees {
+    // }
+    // &.attention {
+    // }
+    // &.normal {
+    // }
+  }
+}
+
+.title {
+  display: block;
+}
+
+.value {
+  // float: right;
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: var(--grey-light-color);
+
+  &.alert {
+    background-color: var(--red-light-color);
+  }
+}
+
+.linkWrapper {
+  flex-grow: 2;
+  display: flex;
+  align-items: flex-end;
+
+  .link {
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url('./images/more-icon.png');
+    background-size: 20px auto;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

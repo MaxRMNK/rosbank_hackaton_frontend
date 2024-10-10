@@ -12,7 +12,11 @@ export const TagList: React.FC<typeTagListProps> = props => {
   return (
     <ul className={cn(className, classes.tagsList)}>
       {tags &&
-        tags.map(tag => <li className={cn(classes.listItem)}>{tag.title}</li>)}
+        tags.map((tag, index) => (
+          <li className={cn(classes.listItem)} key={index}>
+            {tag.title}
+          </li>
+        ))}
     </ul>
   );
 };

@@ -3,60 +3,13 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { typeWelcomeInfoProps } from './types';
-// import Image from 'next/image';
 import Link from 'next/link';
+import { typeWelcomeInfoProps } from './types';
 import { TagList } from '@/source/shared/ui/tag-list';
 import { TeamMember } from '@/source/features/team-member';
 
-// import userPhoto from '@/public/user-photo.jpg';
-// import DefaultAvatar from '@/public/default-avatar.jpg';
-
 export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
   const { welcomeData } = props;
-
-  const DefaultAvatar = '/default-avatar.jpg';
-
-  // const welcomeData = {
-  //   aboutTeam: [
-  //     { item: 'Бас-фактор равен 6, что говорит о стабильности в команде' },
-  //     { item: 'Рекомендовано повысить уровень соответствия задачам (75%)' },
-  //     {
-  //       item: 'Подобрано 11 мероприятий для включения в планы развития членов команды',
-  //     },
-  //   ],
-  //   description:
-  //     'Краткое описание, чем занимается команда, за что ответствена. Это поле на три строчки, чтобы можно было вместить нужное количество инфы о команде. Еще пара слов, чтобы было все же три строки.',
-  //   tags: [{ title: 'Омниканальные клиенты' }, { title: 'E-commerce' }],
-  //   managers: [
-  //     {
-  //       jobPosition: 'Team lead',
-  //       photo: null,
-  //       firstName: 'Имя',
-  //       lastName: 'Фамилия',
-  //     },
-  //     {
-  //       jobPosition: 'Product owner',
-  //       photo: userPhoto,
-  //       firstName: 'ДлинноеИмя',
-  //       lastName: 'ФамилияТоже',
-  //     },
-  //   ],
-  //   links: [
-  //     {
-  //       key: 'wiki',
-  //       name: 'Wiki',
-  //       link: 'https://ya.ru/search/?text=wiki',
-  //     },
-  //     {
-  //       key: 'jira',
-  //       name: 'Jira Board',
-  //       link: 'https://www.atlassian.com/ru/software/jira',
-  //     },
-  //   ],
-  // };
-
-  // const tags = [{ title: 'Омниканальные клиенты' }, { title: 'E-commerce' }];
 
   return (
     <section className={cn(classes.summary)}>
@@ -64,8 +17,10 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
         <h2 className={cn(classes.title)}>Важное о команде</h2>
         <ul className={cn(classes.items)}>
           {welcomeData.aboutTeam &&
-            welcomeData.aboutTeam.map(itemList => (
-              <li className={cn(classes.item)}>{itemList.item}</li>
+            welcomeData.aboutTeam.map((itemList, index) => (
+              <li className={cn(classes.item)} key={index}>
+                {itemList.item}
+              </li>
             ))}
         </ul>
       </div>
@@ -78,8 +33,8 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
 
         <div className={cn(classes.info)}>
           {welcomeData.managers &&
-            welcomeData.managers.map(itemList => (
-              <div className={cn(classes.manager)}>
+            welcomeData.managers.map((itemList, index) => (
+              <div className={cn(classes.manager)} key={index}>
                 <h3 className={cn(classes.infoTitle)}>
                   {itemList.jobPosition}
                 </h3>
@@ -96,12 +51,13 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
             <h3 className={cn(classes.infoTitle)}>Ссылки</h3>
             <div className={cn(classes.linksList)}>
               {welcomeData.links &&
-                welcomeData.links.map(itemList => (
+                welcomeData.links.map((itemList, index) => (
                   <Link
                     href={itemList.link}
                     className={cn(classes.link, classes[itemList.name])}
                     target="_blank"
                     rel="nofollow noindex noopener"
+                    key={index}
                   >
                     {itemList.title}
                   </Link>

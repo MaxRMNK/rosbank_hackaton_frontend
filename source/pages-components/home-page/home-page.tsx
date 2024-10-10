@@ -6,9 +6,8 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 
-// import userPhoto from '@/source/shared/images/user-photo.jpg';
-import userData from '@/source/shared/user.json';
-import summaryData from '@/source/shared/demo-summary.json';
+import userData from '@/public/user.json';
+import summaryData from '@/public/demo-summary.json';
 
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
@@ -73,6 +72,7 @@ export const HomePage: React.FC = () => {
 
       <main className={cn(classes.main)}>
         <WelcomeInfo welcomeData={summaryData.welcomeData} />
+
         <Indicators indicatorsData={summaryData.indicators} />
         <p>sda</p>
       </main>

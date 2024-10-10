@@ -44,12 +44,33 @@
   "indicators": {
     "busFactor": 8,
     "team": [
-      { "name": "allEmployees", "value": 21 },
-      { "name": "keyEmployees", "value": 11 }
+      {
+        "name": "allEmployees",
+        "title": "Все сотрудники",
+        "value": 21,
+        "info": null
+      },
+      {
+        "name": "keyEmployees",
+        "title": "Ключевые сотрудники",
+        "value": 11,
+        "info": "Подсказка для ToolTip"
+      }
     ],
     "skills": [
-      { "name": "normal", "value": 11 },
-      { "name": "attention", "value": 8 }
+      {
+        "name": "normal",
+        "title": "Соответствуют требуемому уровню",
+        "value": 11,
+        "info": null
+      },
+      {
+        "name": "attention",
+        "title": "Требуют развития",
+        "value": 8,
+        "info": null,
+        "alert": true
+      }
     ]
   }
 }
