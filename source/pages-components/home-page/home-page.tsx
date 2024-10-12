@@ -65,9 +65,9 @@ export const HomePage: React.FC = () => {
   function handleAddToPlan() {
     console.log('запрос для редактирования плана развития сотрудников');
   }
-  const handleGetMoreCards = () => {
-    console.log('загрузить еще карточки');
-  };
+  // const handleGetMoreCards = () => {
+  //   console.log('загрузить еще карточки');
+  // };
 
   return (
     <>
@@ -94,7 +94,7 @@ export const HomePage: React.FC = () => {
         <Activities
           taskList={taskData}
           handleAddToPlan={handleAddToPlan}
-          handleGetMoreCards={handleGetMoreCards}
+          // handleGetMoreCards={handleGetMoreCards}
         />
 
         <p>sda</p>

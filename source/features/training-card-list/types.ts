@@ -6,4 +6,5 @@ export interface typeTrainingCardListProps
   taskList: typeTrainingCardProps['task'][];
   handleAddToPlan: typeTrainingCardProps['handleAddToPlan'];
   handleGetMoreCards: () => void;
+  summTask: number;
 }

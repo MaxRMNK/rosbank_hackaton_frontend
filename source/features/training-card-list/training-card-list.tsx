@@ -8,7 +8,7 @@ import { Button } from '@/source/shared/ui/button';
 import { TrainingCard } from '@/source/features/training-card-list/training-card';
 
 export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
-  const { taskList, handleAddToPlan, handleGetMoreCards } = props;
+  const { taskList, handleAddToPlan, handleGetMoreCards, summTask } = props;
 
   return (
     <>
@@ -20,19 +20,22 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
             handleAddToPlan={handleAddToPlan}
           />
         ))}
-        {/* <TrainingCard task={task} handleAddToPlan={handleAddToPlan} /> */}
       </div>
 
-      <div className={cn(classes.buttonWrapper)}>
-        <Button
-          variant="white"
-          className={cn(classes.more)}
-          onClick={handleGetMoreCards}
-          // disabled={true}
-        >
-          Показать еще
-        </Button>
-      </div>
+      {taskList.length >= summTask ? (
+        ''
+      ) : (
+        <div className={cn(classes.buttonWrapper)}>
+          <Button
+            variant="white"
+            className={cn(classes.more)}
+            onClick={handleGetMoreCards}
+            // disabled={true}
+          >
+            Показать еще
+          </Button>
+        </div>
+      )}
     </>
   );
 };

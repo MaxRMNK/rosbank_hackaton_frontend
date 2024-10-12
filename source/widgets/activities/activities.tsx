@@ -16,12 +16,28 @@ import { TrainingCardList } from '@/source/features/training-card-list';
 // import taskData from '@/public/demo-task-list.json';
 
 export const Activities: React.FC<typeActivitiesProps> = props => {
-  const { taskList, handleAddToPlan, handleGetMoreCards } = props;
+  const { taskList, handleAddToPlan } = props;
 
   const [isOpen, setIsOpen] = React.useState(true);
 
   const handleChangeVisibility = () => {
     setIsOpen(!isOpen);
+  };
+
+  // Количество карточек которое нужно выводить изначально
+  const initialCardCount = 2;
+  // Количество каточек, которое будет добавляться
+  const addVisibleCard = 2;
+  const [visibleCardCount, setVisibleCardCount] =
+    React.useState(initialCardCount);
+
+  const handleGetMoreCards = () => {
+    console.log('загрузить еще карточки');
+    calculateCardCount();
+  };
+
+  const calculateCardCount = () => {
+    setVisibleCardCount(visibleCardCount + addVisibleCard);
   };
 
   return (
@@ -52,7 +68,10 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
         className={cn(classes.cardWrapper, { [classes.open]: isOpen })}
       >
         <TrainingCardList
-          taskList={taskList}
+          // films={cards?.slice(0, roundedVisibleCardCount)}
+          taskList={taskList?.slice(0, visibleCardCount)}
+          // taskList={taskList}
+          summTask={taskList.length}
           handleAddToPlan={handleAddToPlan}
           handleGetMoreCards={handleGetMoreCards}
         />
