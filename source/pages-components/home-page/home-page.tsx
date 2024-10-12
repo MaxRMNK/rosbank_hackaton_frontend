@@ -90,29 +90,6 @@ export const HomePage: React.FC = () => {
 
         <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} />
       </main>
-      {/* <footer className="ddd">Footer</footer> */}
     </>
   );
 };
-
-//  <Pagination
-//    onChange={handlePageChange}
-//    total={50}
-//    itemRender={renderItem}
-//  />
-
-// const handlePageChange = (page: number, pagesize: number) => {
-//   console.log('page', page);
-//   console.log('pagesize', pagesize);
-// }
-
-// function renderItem(currentPage: number, type: "page" | "prev" | "next" | "jump-prev" | "jump-next", element: ReactNode) {
-//   if (type === 'page') {
-//     return currentPage;
-//   } else if (type === 'prev') {
-//     return 'DDD';
-//   } else if (type === 'next') {
-//     return 'CCC';
-//   }
-//   return element;
-// }
