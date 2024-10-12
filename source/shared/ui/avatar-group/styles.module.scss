@@ -1,0 +1,21 @@
+.userList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  line-height: 0;
+}
+
+.listItem {
+  &:not(:first-child) {
+    margin-left: -8px;
+  }
+}
+
+.userPhoto {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid var(--white-color);
+}

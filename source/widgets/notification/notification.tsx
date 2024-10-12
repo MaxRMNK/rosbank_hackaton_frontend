@@ -7,11 +7,11 @@ import { typeNotificationProps } from './types';
 import { Button } from '@/source/shared/ui/button';
 
 export const Notification: React.FC<typeNotificationProps> = props => {
-  const { title, description, readMore, approve } = props;
+  const { title, description, handleReadMore, handleApprove } = props;
 
   const [isClose, setClose] = React.useState(false);
 
-  const handlerClose = () => {
+  const handleClose = () => {
     setClose(true);
   };
 
@@ -28,22 +28,22 @@ export const Notification: React.FC<typeNotificationProps> = props => {
         </div>
         <div className={cn(classes.actions)}>
           <Button
-            variant="white"
+            variant="clear"
             className={cn(classes.readMore)}
-            onClick={readMore}
+            onClick={handleReadMore}
           >
             Подробнее
           </Button>
           <Button
             variant="red"
             className={cn(classes.approve)}
-            onClick={approve}
+            onClick={handleApprove}
             // disabled={true}
           >
-            Согласовать
+            Согласовать все
           </Button>
         </div>
-        <button className={cn(classes.closeButton)} onClick={handlerClose} />
+        <button className={cn(classes.closeButton)} onClick={handleClose} />
       </div>
     </>
   );

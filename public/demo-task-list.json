@@ -1,0 +1,121 @@
+[
+  {
+    "type": "article",
+    "heading": {
+      "category": "Прочитать статью",
+      "title": "",
+      "link": {
+        "title": "Плюсы и минусы GA4:  переход на новую систему аналитики",
+        "url": "#"
+      }
+    },
+    "userList": [
+      {
+        "name": "Иван Иванов",
+        "photo": "/user-photo2.jpg"
+      },
+      {
+        "name": "Мария Иванова",
+        "photo": "/user-photo.jpg"
+      },
+      {
+        "name": "Иван",
+        "photo": "/default-avatar.jpg"
+      }
+    ],
+    "tags": [
+      { "title": "Universal Analytics" },
+      { "title": "Продвинутый" },
+      { "title": "Статья" }
+    ],
+    "description": "Если вы не перешли на новую систему аналитики, сейчас самое время. Софья Попова, аналитик в агентстве MediaNation, рассказала, с какими сложностями придётся столкнуться.",
+    "image": "/image1.jpg"
+  },
+  {
+    "type": "meeting",
+    "heading": {
+      "category": "Посетить встречу",
+      "title": "Аналитическая поддержка",
+      "link": { "title": "Смотреть календарь встреч", "url": "#" }
+    },
+    "userList": [
+      {
+        "name": "Иван Иванов",
+        "photo": "/user-photo2.jpg"
+      },
+      {
+        "name": "Мария Иванова",
+        "photo": "/user-photo.jpg"
+      },
+      {
+        "name": "Иван Петров",
+        "photo": "/user-photo2.jpg"
+      }
+    ],
+    "tags": [
+      { "title": "Google Analytics" },
+      { "title": "Продвинутый" },
+      { "title": "Встреча" }
+    ],
+    "description": "Обучение слушателей практическим навыкам использования современных средств аналитики, анализу работы сайтов, продаж в интернет-магазинах, конверсии и эффективности маркетинговых мероприятий.",
+    "image": "/image2.jpg"
+  },
+  {
+    "type": "training",
+    "heading": {
+      "category": "Пройти тренинг",
+      "title": "«JavaScript Essential»",
+      "link": { "title": "Смотреть программу тренингов", "url": "#" }
+    },
+    "userList": [
+      {
+        "name": "Иван Иванов",
+        "photo": "/user-photo2.jpg"
+      },
+      {
+        "name": "Мария Иванова",
+        "photo": "/user-photo.jpg"
+      },
+      {
+        "name": "Иван",
+        "photo": "/default-avatar.jpg"
+      }
+    ],
+    "tags": [
+      { "title": "«JavaScript" },
+      { "title": "Продвинутый" },
+      { "title": "Тренинг" }
+    ],
+    "description": "Этот тренинг поможет  научиться анализировать код и улучшить навыки работы с HTML и CSS. Это полезно для начинающих и профессионалов в области программирования.",
+    "image": "/image3.jpg"
+  },
+  {
+    "type": "course",
+    "heading": {
+      "category": "Пройти курс",
+      "title": "«Figma с нуля до PRO»",
+      "link": { "title": "Смотреть программу курса", "url": "#" }
+    },
+    "userList": [
+      {
+        "name": "Иван Иванов",
+        "photo": "/user-photo2.jpg"
+      },
+      {
+        "name": "Мария Иванова",
+        "photo": "/user-photo.jpg"
+      },
+      {
+        "name": "Иван",
+        "photo": "/default-avatar.jpg"
+      }
+    ],
+    "tags": [
+      { "title": "Figma" },
+      { "title": "Начинающий" },
+      { "title": "Курс" }
+    ],
+    "description": "Освоите самую популярную программу для веб-дизайна на профессиональном уровне. Научитесь создавать интерактивные прототипы, передавать макеты разработчикам и экономить время на рутинных задачах.",
+    "image": "/image4.jpg"
+  }
+]

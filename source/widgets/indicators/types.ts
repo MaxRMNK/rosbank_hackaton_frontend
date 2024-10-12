@@ -3,8 +3,8 @@ import { typeIndicatorsCardProps } from '@/source/features/indicators-card/types
 
 export interface typeIndicatorsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  handlerTeam: typeIndicatorsCardProps['handlerClick'];
-  handlerSkills: typeIndicatorsCardProps['handlerClick'];
+  handleGoToTeam: typeIndicatorsCardProps['handleClick'];
+  handleGoToSkills: typeIndicatorsCardProps['handleClick'];
   indicatorsData: {
     busFactor: number;
     team: typeIndicatorsCardProps['fieldData'];

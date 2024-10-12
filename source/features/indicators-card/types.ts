@@ -3,7 +3,7 @@ import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export interface typeIndicatorsCardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  handlerClick: () => void;
+  handleClick: () => void;
   type: string;
   title: string;
   fieldData: {

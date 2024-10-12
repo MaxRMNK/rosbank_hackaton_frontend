@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { IndicatorsCard } from '@/source/features/indicators-card';
 
 export const Indicators: React.FC<typeIndicatorsProps> = props => {
-  const { indicatorsData, handlerTeam, handlerSkills } = props;
+  const { indicatorsData, handleGoToTeam, handleGoToSkills } = props;
 
   return (
     <section className={cn(classes.indicators)}>
@@ -26,7 +26,7 @@ export const Indicators: React.FC<typeIndicatorsProps> = props => {
       </div>
 
       <IndicatorsCard
-        handlerClick={handlerTeam}
+        handleClick={handleGoToTeam}
         type="team"
         className={cn(classes.team)}
         title={'Состав команды'}
@@ -34,7 +34,7 @@ export const Indicators: React.FC<typeIndicatorsProps> = props => {
       />
 
       <IndicatorsCard
-        handlerClick={handlerSkills}
+        handleClick={handleGoToSkills}
         type="skills"
         className={cn(classes.skills)}
         title={'Ключевые навыки'}

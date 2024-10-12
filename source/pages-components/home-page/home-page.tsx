@@ -8,11 +8,13 @@ import classes from './styles.module.scss';
 
 import userData from '@/public/user.json';
 import summaryData from '@/public/demo-summary.json';
+import taskData from '@/public/demo-task-list.json';
 
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
 import { WelcomeInfo } from '@/source/widgets/welcome-info';
 import { Indicators } from '@/source/widgets/indicators';
+import { Activities } from '@/source/widgets/activities';
 
 export const HomePage: React.FC = () => {
   const [links, setLinks] = React.useState([
@@ -43,18 +45,28 @@ export const HomePage: React.FC = () => {
   //     '',
   // });
 
-  const handlerReadMore = () => {
+  // Действия для кнопок в блоке уведомлений
+  const handleReadMore = () => {
     console.log('Подробнее');
   };
-  const handlerApprove = () => {
+  const handleApprove = () => {
     console.log('Согласовать');
   };
 
-  const handlerTeam = () => {
+  // Переход к разделам страницы
+  const handleGoToTeam = () => {
     console.log('О команде');
   };
-  const handlerSkills = () => {
+  const handleGoToSkills = () => {
     console.log('О навыках');
+  };
+
+  // Карточки активности
+  function handleAddToPlan() {
+    console.log('запрос для редактирования плана развития сотрудников');
+  }
+  const handleGetMoreCards = () => {
+    console.log('загрузить еще карточки');
   };
 
   return (
@@ -65,19 +77,26 @@ export const HomePage: React.FC = () => {
         <Notification
           title={report.title}
           description={report.description}
-          readMore={handlerReadMore}
-          approve={handlerApprove}
+          handleReadMore={handleReadMore}
+          handleApprove={handleApprove}
         />
       )}
 
       <main className={cn(classes.main)}>
-        <WelcomeInfo welcomeData={summaryData.welcomeData} />
+        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
 
-        <Indicators
+        {/* <Indicators
           indicatorsData={summaryData.indicators}
-          handlerTeam={handlerTeam}
-          handlerSkills={handlerSkills}
+          handleGoToTeam={handleGoToTeam}
+          handleGoToSkills={handleGoToSkills}
+        /> */}
+
+        <Activities
+          taskList={taskData}
+          handleAddToPlan={handleAddToPlan}
+          handleGetMoreCards={handleGetMoreCards}
         />
+
         <p>sda</p>
       </main>
       {/* <footer className="ddd">Footer</footer> */}

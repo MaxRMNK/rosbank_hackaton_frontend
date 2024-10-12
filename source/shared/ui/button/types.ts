@@ -5,5 +5,5 @@ export interface typeButtonProps
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
-  variant?: 'red' | 'white' | 'gray';
+  variant?: 'clear' | 'red' | 'white';
 }

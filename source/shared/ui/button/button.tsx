@@ -7,7 +7,7 @@ import { typeButtonProps } from '@/source/shared/ui/button/types';
 
 export const Button: React.FC<typeButtonProps> = props => {
   const {
-    variant = 'red',
+    variant = 'clear',
     children,
     disabled,
     className,
