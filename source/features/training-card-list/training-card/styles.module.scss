@@ -1,5 +1,40 @@
+.card {
+  background-color: var(--white-smoke-color);
+  padding: 30px 30px 35px 30px;
+}
+
 .header {
   margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+
+  .title {
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5%;
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 28px auto;
+    background-image: url('./images/article.svg');
+
+    &:not(.article) {
+      .link {
+        white-space: nowrap;
+      }
+    }
+    &.meeting {
+      background-image: url('./images/meeting.svg');
+    }
+    &.training {
+      background-image: url('./images/training.svg');
+    }
+    &.course {
+      background-image: url('./images/course.svg');
+    }
+  }
 }
 
 .recommended {

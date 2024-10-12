@@ -24,19 +24,16 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
     setIsOpen(!isOpen);
   };
 
-  // Количество карточек которое нужно выводить изначально
-  const initialCardCount = 2;
-  // Количество каточек, которое будет добавляться
+  // Карточек изначально
+  const initialCardCount = 4;
+  // Каточек добавлять по клику "Еще"
   const addVisibleCard = 2;
+
   const [visibleCardCount, setVisibleCardCount] =
     React.useState(initialCardCount);
 
   const handleGetMoreCards = () => {
-    console.log('загрузить еще карточки');
-    calculateCardCount();
-  };
-
-  const calculateCardCount = () => {
+    // console.log('загрузить еще карточки');
     setVisibleCardCount(visibleCardCount + addVisibleCard);
   };
 

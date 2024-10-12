@@ -24,5 +24,5 @@ interface typeTask {
 export interface typeTrainingCardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   task: typeTask;
-  handleAddToPlan: () => void;
+  handleAddToPlan: (task: typeTask) => void;
 }

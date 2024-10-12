@@ -32,7 +32,7 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
             onClick={handleGetMoreCards}
             // disabled={true}
           >
-            Показать еще
+            Показать еще 2
           </Button>
         </div>
       )}

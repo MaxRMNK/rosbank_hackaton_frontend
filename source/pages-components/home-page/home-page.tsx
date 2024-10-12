@@ -62,12 +62,9 @@ export const HomePage: React.FC = () => {
   };
 
   // Карточки активности
-  function handleAddToPlan() {
-    console.log('запрос для редактирования плана развития сотрудников');
+  function handleAddToPlan(data: any) {
+    console.log('запрос для редактирования плана развития сотрудников', data);
   }
-  // const handleGetMoreCards = () => {
-  //   console.log('загрузить еще карточки');
-  // };
 
   return (
     <>
@@ -83,21 +80,15 @@ export const HomePage: React.FC = () => {
       )}
 
       <main className={cn(classes.main)}>
-        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
+        <WelcomeInfo welcomeData={summaryData.welcomeData} />
 
-        {/* <Indicators
+        <Indicators
           indicatorsData={summaryData.indicators}
           handleGoToTeam={handleGoToTeam}
           handleGoToSkills={handleGoToSkills}
-        /> */}
-
-        <Activities
-          taskList={taskData}
-          handleAddToPlan={handleAddToPlan}
-          // handleGetMoreCards={handleGetMoreCards}
         />
 
-        <p>sda</p>
+        <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} />
       </main>
       {/* <footer className="ddd">Footer</footer> */}
     </>
