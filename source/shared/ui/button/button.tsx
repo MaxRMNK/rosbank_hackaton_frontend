@@ -6,7 +6,13 @@ import cn from 'classnames';
 import { typeButtonProps } from '@/source/shared/ui/button/types';
 
 export const Button: React.FC<typeButtonProps> = props => {
-  const { variant = 'clear', children, disabled, className, ...otherProps } = props;
+  const {
+    variant = 'clear',
+    children,
+    disabled,
+    className,
+    ...otherProps
+  } = props;
 
   return (
     <button

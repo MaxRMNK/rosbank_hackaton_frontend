@@ -22,13 +22,17 @@ export const TrainingCard: React.FC<typeTrainingCardProps> = props => {
       {/* {task.type} */}
       <div className={cn(classes.header)}>
         <h3 className={cn(classes.title, classes[task.type])}>
-          <span className={cn(classes.category)}>{task.heading.category}</span> {task.heading.title}{' '}
+          <span className={cn(classes.category)}>{task.heading.category}</span>{' '}
+          {task.heading.title}{' '}
           <Link href={task.heading.link.url} className={cn(classes.link)}>
             {task.heading.link.title}
           </Link>
         </h3>
         <div className={cn(classes.recommended)}>
-          <AvatarGroup userList={task.userList} className={cn(classes.userList)} />
+          <AvatarGroup
+            userList={task.userList}
+            className={cn(classes.userList)}
+          />
           <span className={cn(classes.listHeader)}>рекомендовано</span>
         </div>
       </div>
@@ -46,7 +50,11 @@ export const TrainingCard: React.FC<typeTrainingCardProps> = props => {
         <p className={cn(classes.description)}>{task.description}</p>
       </div>
 
-      <Button variant="red" className={cn(classes.more)} onClick={handleClickAddToPlan}>
+      <Button
+        variant="red"
+        className={cn(classes.more)}
+        onClick={handleClickAddToPlan}
+      >
         Включить в план развития
       </Button>
     </article>

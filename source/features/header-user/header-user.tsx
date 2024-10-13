@@ -10,7 +10,12 @@ export const HeaderUserInfo: React.FC<typeUserInfoProps> = props => {
 
   const DefaultAvatar = '/default-avatar.jpg';
 
-  const name = (userInfo?.firstName + ' ' + userInfo?.lastName.substring(0, 1) + '.').trim();
+  const name = (
+    userInfo?.firstName +
+    ' ' +
+    userInfo?.lastName.substring(0, 1) +
+    '.'
+  ).trim();
 
   return (
     <div className={cn(classes.user)}>

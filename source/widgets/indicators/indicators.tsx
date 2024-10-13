@@ -19,7 +19,9 @@ export const Indicators: React.FC<typeIndicatorsProps> = props => {
             Бас-фактор
             {/* <span className={cn(classes.info)}></span> */}
           </h2>
-          <p className={cn(classes.subtitle)}>Чем больше бас-фактор, тем меньше риска</p>
+          <p className={cn(classes.subtitle)}>
+            Чем больше бас-фактор, тем меньше риска
+          </p>
         </div>
       </div>
 

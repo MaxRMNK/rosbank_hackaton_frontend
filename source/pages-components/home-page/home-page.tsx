@@ -90,7 +90,10 @@ export const HomePage: React.FC = () => {
           handleGoToSkills={handleGoToSkills}
         /> */}
 
-        <KeyIndicators teamData={teamData} className={cn(classes.keyIndicators)} />
+        <KeyIndicators
+          teamData={teamData}
+          className={cn(classes.keyIndicators)}
+        />
 
         {/* <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} /> */}
       </main>
