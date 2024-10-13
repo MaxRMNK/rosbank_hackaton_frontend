@@ -26,36 +26,23 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
     <div className={cn(classes.one)}>
       <div className={cn(classes.tableToggle)}>
         Блоки переключателей
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={chengeCheckbox}
-          name="advanced"
-        />
+        <input type="checkbox" checked={checked} onChange={chengeCheckbox} name="advanced" />
       </div>
 
       <div className={cn(classes.tableTeam)}>
         <div className={cn(classes.tableHeader)}>
-          <div className={cn(classes.users, classes.tableCell)}>
-            Ключевые сотрудники
-          </div>
+          <div className={cn(classes.users, classes.tableCell)}>Ключевые сотрудники</div>
           <div className={cn(classes.userRole, classes.tableCell)}>Роль</div>
           <div className={cn(classes.grade, classes.tableCell)}>Грейд</div>
           <div className={cn(classes.skills, classes.tableCell)}>Навыки</div>
           <div className={cn(classes.expertise, classes.tableCell)}>
             Соответствие задачам команды, %
           </div>
-          <div className={cn(classes.progress, classes.tableCell)}>
-            Готовность к повышению, %
-          </div>
+          <div className={cn(classes.progress, classes.tableCell)}>Готовность к повышению, %</div>
           <div className={cn(classes.action, classes.tableCell)}>Х</div>
         </div>
         {teamData.map((item, index) => (
-          <TeamTableRow
-            key={index}
-            user={item}
-            className={cn(classes.tableUserRow)}
-          />
+          <TeamTableRow key={index} user={item} className={cn(classes.tableUserRow)} />
         ))}
       </div>
     </div>

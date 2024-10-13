@@ -9,10 +9,7 @@ export const HeaderMenu: React.FC<headerMenuProps> = props => {
   return (
     <nav className={cn(className, classes.headerMenu)}>
       <ul className={cn(className, classes.headerMenuWrapper)}>
-        {links &&
-          links.map((link, index) => (
-            <HeaderMenuLink key={index} link={link} />
-          ))}
+        {links && links.map((link, index) => <HeaderMenuLink key={index} link={link} />)}
       </ul>
     </nav>
   );

@@ -12,11 +12,7 @@ export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {
   return (
     <div className={cn(classes.tableRow)}>
       <div className={cn(classes.users)}>
-        <TeamMember
-          photo={user.userPhoto}
-          firstName={user.firstName}
-          lastName={user.lastName}
-        />
+        <TeamMember photo={user.userPhoto} firstName={user.firstName} lastName={user.lastName} />
       </div>
       <div className={cn(classes.userRole)}>X</div>
       <div className={cn(classes.grade)}>X</div>

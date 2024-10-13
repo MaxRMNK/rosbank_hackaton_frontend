@@ -29,8 +29,7 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
   // Каточек добавлять по клику "Еще"
   const addVisibleCard = 2;
 
-  const [visibleCardCount, setVisibleCardCount] =
-    React.useState(initialCardCount);
+  const [visibleCardCount, setVisibleCardCount] = React.useState(initialCardCount);
 
   const handleGetMoreCards = () => {
     // console.log('загрузить еще карточки');
@@ -47,8 +46,7 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
             <Link href={'#'} className={cn(classes.link)}>
               Учебного центра
             </Link>
-            , а также HR-активности, которые помогут в развитии компетенций в
-            команде
+            , а также HR-активности, которые помогут в развитии компетенций в команде
           </p>
         </div>
 

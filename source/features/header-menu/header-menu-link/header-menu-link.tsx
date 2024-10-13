@@ -31,13 +31,7 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
           onMouseEnter={visable}
           onMouseLeave={hidden}
         >
-          <button
-            className={cn(
-              className,
-              classes.headerMenuLink,
-              classes.headerMenuDropdown,
-            )}
-          >
+          <button className={cn(className, classes.headerMenuLink, classes.headerMenuDropdown)}>
             {link.title}
             <Image src={arrow} alt="" />
           </button>
@@ -49,10 +43,7 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
               // onMouseLeave={hidden}
             >
               {link.children.map((link, index) => (
-                <li
-                  key={index}
-                  className={cn(className, classes.headerMenuChildrenItems)}
-                >
+                <li key={index} className={cn(className, classes.headerMenuChildrenItems)}>
                   <Link
                     className={cn(
                       className,
@@ -71,10 +62,7 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
         </li>
       ) : (
         <li className={cn(className, classes.headerMenuLinkWrapper)}>
-          <Link
-            className={cn(className, classes.headerMenuLink)}
-            href={link.link}
-          >
+          <Link className={cn(className, classes.headerMenuLink)} href={link.link}>
             {link.title}
           </Link>
         </li>

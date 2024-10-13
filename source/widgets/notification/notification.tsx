@@ -27,11 +27,7 @@ export const Notification: React.FC<typeNotificationProps> = props => {
           <p className={cn(classes.description)}>{description}</p>
         </div>
         <div className={cn(classes.actions)}>
-          <Button
-            variant="clear"
-            className={cn(classes.readMore)}
-            onClick={handleReadMore}
-          >
+          <Button variant="clear" className={cn(classes.readMore)} onClick={handleReadMore}>
             Подробнее
           </Button>
           <Button

@@ -14,11 +14,7 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
     <>
       <div className={cn(classes.cardList)}>
         {taskList.map((item, index) => (
-          <TrainingCard
-            key={index}
-            task={item}
-            handleAddToPlan={handleAddToPlan}
-          />
+          <TrainingCard key={index} task={item} handleAddToPlan={handleAddToPlan} />
         ))}
       </div>
 

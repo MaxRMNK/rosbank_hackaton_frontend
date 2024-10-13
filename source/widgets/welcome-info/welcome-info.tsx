@@ -35,9 +35,7 @@ export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
           {welcomeData.managers &&
             welcomeData.managers.map((itemList, index) => (
               <div className={cn(classes.manager)} key={index}>
-                <h3 className={cn(classes.infoTitle)}>
-                  {itemList.jobPosition}
-                </h3>
+                <h3 className={cn(classes.infoTitle)}>{itemList.jobPosition}</h3>
                 <TeamMember
                   className={cn(classes.details)}
                   photo={itemList.photo}
