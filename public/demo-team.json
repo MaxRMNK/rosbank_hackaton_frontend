@@ -1,0 +1,142 @@
+[
+  {
+    "userPhoto": "/user-photo2.jpg",
+    "firstName": "Константин",
+    "lastName": "Иванов",
+    "keyEmployee": true,
+    "userRole": "Backend-разработчик",
+    "grade": "Team Lead",
+    "skills": [
+      { "skill": "C++", "level": "beginner", "state": "normal" },
+      { "skill": "Java", "level": "advanced", "state": "low" },
+      { "skill": "Python", "level": "expert", "state": "normal" },
+      { "skill": "Django", "level": "expert", "state": "normal" },
+      { "skill": "Json", "level": "intermediate", "state": "normal" },
+      { "skill": "PostgreSQL", "level": "expert", "state": "normal" },
+      { "skill": "MySQL", "level": "beginner", "state": "normal" },
+      { "skill": "MongoDB", "level": "intermediate", "state": "low" },
+      { "skill": "Git", "level": "intermediate", "state": "low" },
+      {
+        "skill": "Windows",
+        "level": "advanced",
+        "state": "normal",
+        "improving": {
+          "startDate": "2024-01-15",
+          "initiator": "Руководитель",
+          "agreed": true,
+          "completed": 0.85
+        }
+      },
+      { "skill": "Linux", "level": "advanced", "state": "normal" },
+      { "skill": "Scrum", "level": "none", "state": "normal" },
+      { "skill": "Agile", "level": "none", "state": "normal" },
+      { "skill": "HTML5", "level": "beginner", "state": "normal" },
+      { "skill": "CSS3", "level": "beginner", "state": "normal" }
+    ],
+    "expertise": 0.65,
+    "progress": 0.9
+  },
+  {
+    "userPhoto": "/user-photo.jpg",
+    "firstName": "Викарий",
+    "lastName": "Триббиани",
+    "keyEmployee": false,
+    "userRole": "Backend-разработчик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "Java", "level": "advanced", "state": "low" },
+      { "skill": "Python", "level": "expert", "state": "normal" },
+      { "skill": "Django", "level": "expert", "state": "normal" },
+      { "skill": "Json", "level": "intermediate", "state": "normal" },
+      { "skill": "PostgreSQL", "level": "expert", "state": "normal" },
+      { "skill": "MongoDB", "level": "intermediate", "state": "low" },
+      {
+        "skill": "Git",
+        "level": "intermediate",
+        "state": "low",
+        "improving": {
+          "startDate": "2024-01-15",
+          "initiator": "Руководитель",
+          "agreed": true,
+          "completed": 0.17
+        }
+      },
+      { "skill": "Windows", "level": "advanced", "state": "normal" },
+      { "skill": "Linux", "level": "advanced", "state": "normal" },
+      { "skill": "Scrum", "level": "none", "state": "normal" },
+      { "skill": "Agile", "level": "none", "state": "normal" },
+      { "skill": "HTML5", "level": "beginner", "state": "normal" },
+      { "skill": "CSS3", "level": "beginner", "state": "normal" }
+    ],
+    "expertise": 0.75,
+    "progress": 0.52
+  },
+  {
+    "userPhoto": "/user-photo3.jpg",
+    "firstName": "Константин",
+    "lastName": "Константинопольский",
+    "keyEmployee": true,
+    "userRole": "Frontend-разработчик",
+    "grade": "Middle",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "state": "low" },
+      { "skill": "CSS3", "level": "expert", "state": "normal" },
+      { "skill": "Sass", "level": "expert", "state": "normal" },
+      { "skill": "JavaScript", "level": "intermediate", "state": "normal" },
+      { "skill": "TypeSctipt", "level": "advanced", "state": "normal" },
+      { "skill": "React", "level": "expert", "state": "normal" },
+      { "skill": "Next.js", "level": "intermediate", "state": "low" },
+      { "skill": "Figma", "level": "beginner", "state": "normal" }
+    ],
+    "expertise": 0.8,
+    "progress": 0.81
+  },
+  {
+    "userPhoto": "/user-photo6.jpg",
+    "firstName": "Анна",
+    "lastName": "Иванова",
+    "keyEmployee": true,
+    "userRole": "Frontend-разработчик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "state": "low" },
+      { "skill": "CSS3", "level": "expert", "state": "normal" },
+      { "skill": "Sass", "level": "expert", "state": "normal" },
+      { "skill": "JavaScript", "level": "intermediate", "state": "normal" },
+      { "skill": "TypeSctipt", "level": "advanced", "state": "normal" },
+      { "skill": "React", "level": "expert", "state": "normal" },
+      { "skill": "Next.js", "level": "intermediate", "state": "low" },
+      { "skill": "Figma", "level": "beginner", "state": "normal" }
+    ],
+    "expertise": 0.8,
+    "progress": 0.81
+  },
+  {
+    "userPhoto": "/user-photo7.jpg",
+    "firstName": "Карина",
+    "lastName": "Кириллова",
+    "keyEmployee": true,
+    "userRole": "Бизнес-аналитик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "state": "low" },
+      { "skill": "CSS3", "level": "expert", "state": "normal" },
+      { "skill": "Figma", "level": "beginner", "state": "normal" },
+      {
+        "skill": "Windows",
+        "level": "advanced",
+        "state": "normal",
+        "improving": {
+          "startDate": "2024-01-15",
+          "initiator": "Руководитель",
+          "agreed": true,
+          "completed": 0.85
+        }
+      },
+      { "skill": "Scrum", "level": "none", "state": "normal" },
+      { "skill": "Agile", "level": "none", "state": "normal" }
+    ],
+    "expertise": 0.8,
+    "progress": 0.81
+  }
+]

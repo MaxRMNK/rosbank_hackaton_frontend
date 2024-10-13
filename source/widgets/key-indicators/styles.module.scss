@@ -1,0 +1,19 @@
+.keyIndicators {
+  padding: 0 100px;
+  margin: 0 0 60px;
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 30px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcc;
+}

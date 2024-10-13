@@ -9,12 +9,14 @@ import classes from './styles.module.scss';
 import userData from '@/public/user.json';
 import summaryData from '@/public/demo-summary.json';
 import taskData from '@/public/demo-task-list.json';
+import teamData from '@/public/demo-team.json';
 
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
 import { WelcomeInfo } from '@/source/widgets/welcome-info';
 import { Indicators } from '@/source/widgets/indicators';
 import { Activities } from '@/source/widgets/activities';
+import { KeyIndicators } from '@/source/widgets/key-indicators';
 
 export const HomePage: React.FC = () => {
   const [links, setLinks] = React.useState([
@@ -80,15 +82,20 @@ export const HomePage: React.FC = () => {
       )}
 
       <main className={cn(classes.main)}>
-        <WelcomeInfo welcomeData={summaryData.welcomeData} />
+        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
 
-        <Indicators
+        {/* <Indicators
           indicatorsData={summaryData.indicators}
           handleGoToTeam={handleGoToTeam}
           handleGoToSkills={handleGoToSkills}
+        /> */}
+
+        <KeyIndicators
+          teamData={teamData}
+          className={cn(classes.keyIndicators)}
         />
 
-        <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} />
+        {/* <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} /> */}
       </main>
     </>
   );

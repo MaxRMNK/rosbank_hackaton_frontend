@@ -63,12 +63,16 @@
 }
 
 .cardWrapper {
-  max-height: 0;
+  // max-height: 0;
+  height: 0px;
+  line-height: 0px;
   overflow: hidden;
   transition: all 0.5s;
 
   &.open {
     // max-height: 200px;
-    max-height: max-content;
+    height: 100%;
+    line-height: 27px;
+    // max-height: max-content;
   }
 }
