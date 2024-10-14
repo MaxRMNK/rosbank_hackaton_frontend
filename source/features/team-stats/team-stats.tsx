@@ -8,19 +8,16 @@ import { TeamTableRow } from '../team-table-row';
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   const { teamData } = props;
 
-  // let newData = [];
-
   const [checked, setChecked] = React.useState(false);
 
-  function chengeCheckbox(e: any) {
+  const chengeCheckbox = (e: any) => {
     setChecked(!checked);
+    // console.log(e?.target?.name);
+  };
 
-    console.log(e?.target?.name);
-
-    // newData = teamData.filter(function (item) {
-    //   // return item.description
-    // })
-  }
+  const requestForTraining = (e: any) => {
+    console.log('Отправить запрос на обучение', e);
+  };
 
   return (
     <div className={cn(classes.one)}>
@@ -48,13 +45,14 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
           <div className={cn(classes.progress, classes.tableCell)}>
             Готовность к повышению, %
           </div>
-          <div className={cn(classes.action, classes.tableCell)}>Х</div>
+          <div className={cn(classes.action, classes.tableCell)}></div>
         </div>
         {teamData.map((item, index) => (
           <TeamTableRow
             key={index}
             user={item}
             className={cn(classes.tableUserRow)}
+            requestForTraining={requestForTraining}
           />
         ))}
       </div>

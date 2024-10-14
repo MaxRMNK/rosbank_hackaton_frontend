@@ -6,4 +6,5 @@ export interface typeTeamMemberProps
   photo: StaticImageData | string | null;
   firstName: string;
   lastName: string;
+  keyEmployee?: boolean;
 }

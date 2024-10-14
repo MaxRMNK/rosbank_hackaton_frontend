@@ -1,10 +1,38 @@
-.tableHeader {
+// .tableTeam {}
+
+.tableHeader,
+.tableUserRow {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 10px;
-  background-color: aqua;
+  // grid-template-columns: repeat(7, minmax(0, 1fr));
+  // gap: 10px;
+  grid-template-columns:
+    [user] minmax(160px, 220px)
+    [role] minmax(120px, 130px)
+    [grage] minmax(80px, 90px)
+    [skills] minmax(200px, 2fr)
+    [col5] minmax(150px, 165px)
+    [col6] minmax(120px, 130px)
+    [col7] 35px;
+  align-items: stretch;
 }
 
-.tableCell {
-  background-color: #fcc;
+.tableHeader {
+  background-color: var(--white-smoke-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+
+  .tableCell {
+    align-self: center;
+    padding: 10px 12px;
+  }
+}
+
+.tableUserRow {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+  border-bottom: 1px solid var(--grey-light-color);
 }

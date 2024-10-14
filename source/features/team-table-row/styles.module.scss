@@ -1,5 +1,61 @@
-.tableRow {
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 10px;
+// .tableRow {
+//   font-size: 12px;
+//   line-height: 16px;
+//   font-weight: 600;
+//   color: var(--grey-dark-color);
+// }
+
+.tableCell {
+  align-self: center;
+  // background-color: #d88;
+  padding: 10px 12px;
+
+  &.expertise,
+  &.progress {
+    justify-self: center;
+  }
+
+  &.action {
+    justify-self: center;
+    padding: 0;
+  }
+}
+
+.user {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+}
+
+.green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: var(--green-light-color);
+}
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: var(--red-light-color);
+}
+
+.trainingButton {
+  line-height: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px auto;
+  background-image: url('./images/training-icon.svg');
 }

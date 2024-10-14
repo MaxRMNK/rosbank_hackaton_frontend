@@ -35,4 +35,5 @@ interface typeUser {
 export interface typeTeamTableRowProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   user: typeUser;
+  requestForTraining: (e: any) => void;
 }

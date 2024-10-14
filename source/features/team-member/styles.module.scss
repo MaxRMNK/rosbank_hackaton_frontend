@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
 
   .userAvatar {
     width: 32px;
@@ -12,10 +13,26 @@
     border: 1px solid var(--grey-light-color);
   }
 
+  .keyEmployee {
+    position: absolute;
+    left: 16px;
+    top: -5px;
+    z-index: 5;
+    filter: drop-shadow(1px 0 0 white) drop-shadow(0 1px 0 white)
+      drop-shadow(-1px 0 0 white) drop-shadow(0 -1px 0 white);
+    display: block;
+    width: 16px;
+    height: 14px;
+    line-height: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px auto;
+    background-image: url('./images/key-employee.png');
+  }
+
   .userName {
     display: block;
-    font-size: 14px;
-    line-height: 18px;
     overflow: hidden;
   }
 }
