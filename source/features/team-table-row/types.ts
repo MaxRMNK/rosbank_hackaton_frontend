@@ -1,4 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { typeTagListSkillsProps } from '@/source/shared/ui/tag-list-skills/types';
 
 interface typeUser {
   userPhoto: string;
@@ -7,27 +8,7 @@ interface typeUser {
   keyEmployee: boolean;
   userRole: string;
   grade: string;
-  skills: {
-    skill: string;
-    level: string;
-    state: string;
-    // improving?:
-    // | undefined
-    // | null
-    // | {
-    //     startDate: Date;
-    //     initiator: string;
-    //     agreed: boolean;
-    //     completed: number;
-    //   };
-    improving?: {
-      startDate: string;
-      // startDate: Date;
-      initiator: string;
-      agreed: boolean;
-      completed: number;
-    };
-  }[];
+  skills: typeTagListSkillsProps['tags'];
   expertise: number;
   progress: number;
 }

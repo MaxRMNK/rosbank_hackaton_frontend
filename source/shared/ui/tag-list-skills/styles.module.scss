@@ -1,0 +1,67 @@
+.tagsList {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 11px;
+  line-height: 16px;
+  flex-wrap: wrap;
+}
+
+.listItem,
+.listItemMore {
+  margin: 0;
+  padding: 4px 20px 4px 4px;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid var(--grey-light-color);
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 12px auto;
+
+  &.none {
+    background-image: url('./images/level-none.svg');
+  }
+  &.beginner {
+    background-image: url('./images/level-beginner.svg');
+  }
+  &.intermediate {
+    background-image: url('./images/level-intermediate.svg');
+  }
+  &.advanced {
+    background-image: url('./images/level-advanced.svg');
+  }
+  &.expert {
+    background-image: url('./images/level-expert.svg');
+  }
+
+  &.normal {
+    background-color: transparent;
+  }
+  &.low {
+    background-color: var(--red-light-color);
+  }
+  &.improving {
+    background-color: var(--red-light-color);
+    // background-color: var(--green-light-color);
+    background-image: url('./images/status-improving.svg');
+  }
+}
+
+.listItemButton {
+  margin: 0;
+  padding: 0;
+
+  .moreTag {
+    padding: 4px 6px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background-color: var(--grey-light-color);
+    cursor: pointer;
+  }
+}

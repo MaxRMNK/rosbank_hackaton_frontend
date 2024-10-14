@@ -2,6 +2,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeTeamTableRowProps } from './types';
 import { TeamMember } from '../team-member';
+import { TagListSkills } from '@/source/shared/ui/tag-list-skills';
 
 export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {
   const { user, requestForTraining, className } = props;
@@ -30,9 +31,10 @@ export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {
       </div>
       <div className={cn(classes.grade, classes.tableCell)}>{user.grade}</div>
       <div className={cn(classes.skills, classes.tableCell)}>
-        {user.skills.map((item, index) => (
+        <TagListSkills tags={user.skills} />
+        {/* {user.skills.map((item, index) => (
           <span key={index}>{item.skill + ' '}</span>
-        ))}
+        ))} */}
       </div>
       <div className={cn(classes.expertise, classes.tableCell)}>
         {printPercent(user.expertise)}
