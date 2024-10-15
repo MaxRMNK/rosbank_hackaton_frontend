@@ -19,6 +19,7 @@
   background-repeat: no-repeat;
   background-position: right 4px center;
   background-size: 12px auto;
+  background-clip: padding-box;
 
   &.none {
     background-image: url('./images/level-none.svg');
@@ -59,7 +60,7 @@
     line-height: 16px;
     font-weight: 600;
     box-sizing: border-box;
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--grey-light2-color);
     border-radius: 4px;
     background-color: var(--grey-light-color);
     cursor: pointer;

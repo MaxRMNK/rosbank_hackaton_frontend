@@ -8,7 +8,13 @@ import { Button } from '@/source/shared/ui/button';
 import { TrainingCard } from '@/source/features/training-card-list/training-card';
 
 export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
-  const { taskList, handleAddToPlan, handleGetMoreCards, summTask } = props;
+  const {
+    taskList,
+    handleAddToPlan,
+    handleGetMoreCards,
+    summTask,
+    addVisibleCard,
+  } = props;
 
   return (
     <>
@@ -32,7 +38,7 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
             onClick={handleGetMoreCards}
             // disabled={true}
           >
-            Показать еще 2
+            Показать еще {addVisibleCard}
           </Button>
         </div>
       )}

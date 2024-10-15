@@ -19,7 +19,6 @@ export const TrainingCard: React.FC<typeTrainingCardProps> = props => {
 
   return (
     <article className={cn(classes.card)}>
-      {/* {task.type} */}
       <div className={cn(classes.header)}>
         <h3 className={cn(classes.title, classes[task.type])}>
           <span className={cn(classes.category)}>{task.heading.category}</span>{' '}
@@ -40,23 +39,25 @@ export const TrainingCard: React.FC<typeTrainingCardProps> = props => {
       <TagList tags={task.tags} className={cn(classes.tagList)} />
 
       <div className={cn(classes.contentWrapper)}>
-        <Image
+        {/* <Image
           className={cn(classes.previewImage)}
           src={task.image}
           alt=""
           width={210}
           height={110}
-        />
+        /> */}
         <p className={cn(classes.description)}>{task.description}</p>
       </div>
 
-      <Button
-        variant="red"
-        className={cn(classes.more)}
-        onClick={handleClickAddToPlan}
-      >
-        Включить в план развития
-      </Button>
+      <div className={cn(classes.buttonWrapper)}>
+        <Button
+          variant="red"
+          className={cn(classes.addToPlan)}
+          onClick={handleClickAddToPlan}
+        >
+          Включить в план развития
+        </Button>
+      </div>
     </article>
   );
 };

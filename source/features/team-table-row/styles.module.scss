@@ -1,14 +1,8 @@
-// .tableRow {
-//   font-size: 12px;
-//   line-height: 16px;
-//   font-weight: 600;
-//   color: var(--grey-dark-color);
-// }
+// .tableRow {}
 
 .tableCell {
   align-self: center;
-  // background-color: #d88;
-  padding: 12px;
+  padding: 16px 12px;
 
   &.expertise,
   &.progress {

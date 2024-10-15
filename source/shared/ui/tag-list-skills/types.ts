@@ -7,7 +7,9 @@ export interface typeTagListSkillsProps
   > {
   tags: {
     skill: string;
-    level: 'none' | 'beginner' | 'intermediate' | 'advanced' | 'expert';
-    status: 'normal' | 'low' | 'improving';
+    level: string;
+    // level: 'none' | 'beginner' | 'intermediate' | 'advanced' | 'expert';
+    status: string;
+    // status: 'normal' | 'low' | 'improving';
   }[];
 }

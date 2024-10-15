@@ -1,0 +1,44 @@
+// .tableTeam {}
+
+.tableHeader,
+.tableSkillsRow {
+  display: grid;
+  // grid-template-columns: repeat(7, minmax(0, 1fr));
+  // gap: 10px;
+  grid-template-columns:
+    [skills] minmax(160px, 220px)
+    [users] 35px
+    [level] minmax(200px, 2fr)
+    [targetLevel] minmax(150px, 165px)
+    [alert] 35px;
+  align-items: stretch;
+}
+
+.tableHeader {
+  background-color: var(--white-smoke-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+
+  .tableCell {
+    align-self: center;
+    padding: 12px;
+  }
+
+  .users {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px auto;
+    background-image: url('./images/users-three.png');
+  }
+}
+
+.tableUserRow {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--grey-dark-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}

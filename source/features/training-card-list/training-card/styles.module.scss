@@ -1,6 +1,8 @@
 .card {
   background-color: var(--white-smoke-color);
   padding: 30px 30px 35px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -71,4 +73,10 @@
     line-height: 22px;
     color: var(--black-color);
   }
+}
+
+.buttonWrapper {
+  flex-grow: 2;
+  display: flex;
+  align-items: flex-end;
 }

@@ -82,20 +82,20 @@ export const HomePage: React.FC = () => {
       )}
 
       <main className={cn(classes.main)}>
-        {/* <WelcomeInfo welcomeData={summaryData.welcomeData} /> */}
+        <WelcomeInfo welcomeData={summaryData.welcomeData} />
 
-        {/* <Indicators
+        <Indicators
           indicatorsData={summaryData.indicators}
           handleGoToTeam={handleGoToTeam}
           handleGoToSkills={handleGoToSkills}
-        /> */}
+        />
 
         <KeyIndicators
           teamData={teamData}
           className={cn(classes.keyIndicators)}
         />
 
-        {/* <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} /> */}
+        <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} />
       </main>
     </>
   );

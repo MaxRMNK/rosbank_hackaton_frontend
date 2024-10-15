@@ -32,9 +32,6 @@ export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {
       <div className={cn(classes.grade, classes.tableCell)}>{user.grade}</div>
       <div className={cn(classes.skills, classes.tableCell)}>
         <TagListSkills tags={user.skills} />
-        {/* {user.skills.map((item, index) => (
-          <span key={index}>{item.skill + ' '}</span>
-        ))} */}
       </div>
       <div className={cn(classes.expertise, classes.tableCell)}>
         {printPercent(user.expertise)}

@@ -9,6 +9,11 @@ import { typeTagListSkillsProps } from './types';
 export const TagListSkills: React.FC<typeTagListSkillsProps> = props => {
   const { tags, className } = props;
 
+  // const { skill = '',
+  //   level = '',
+  //   status= '',
+  //  } = tags;
+
   // Тегов изначально
   const initialTagCount = 9;
   // Всего тегов
