@@ -1,0 +1,110 @@
+.summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  padding: 40px 100px;
+  width: 100%;
+}
+
+.aboutTeam {
+  padding: 30px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--grey-light-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .title {
+    margin: 0 90px 15px 0;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 10px;
+  }
+
+  .tagList {
+    margin: 0 0 30px 0;
+  }
+}
+
+.edit {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 1;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px auto;
+  background-clip: padding-box;
+  background-image: url('./images/edit-button.svg');
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.infoTitle {
+  margin: 0 0 10px 0;
+}
+
+.info {
+  display: flex;
+  gap: 30px;
+
+  .manager {
+    max-width: 133px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 18px;
+
+    .details {
+      flex-grow: 2;
+      // padding: 4px 0;
+    }
+  }
+}
+
+.linksList {
+  // flex-grow: 2;
+  display: flex;
+  gap: 10px;
+
+  .link {
+    display: block;
+    padding: 4px 16px 4px 42px;
+    border: 1px solid var(--grey-light-color);
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: var(--grey-dark-color);
+    font-size: 14px;
+    line-height: 32px;
+    white-space: nowrap;
+
+    background-repeat: no-repeat;
+    background-position: left 16px center;
+    background-size: 16px auto;
+    background-clip: padding-box;
+
+    &.wiki {
+      background-image: url('./images/wiki-icon.png');
+    }
+
+    &.jira {
+      background-image: url('./images/jira-icon.png');
+    }
+
+    &:hover {
+      border-color: var(--grey-light2-color);
+    }
+  }
+}

@@ -1,9 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
-// import { typeAboutTeamProps } from '@/source/features/about-team/types';
 
-export interface typeWelcomeInfoProps
+export interface typeAboutTeamProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  // welcomeData: typeAboutTeamProps['welcomeData'];
   welcomeData: {
     teamName: string;
     description: string;
@@ -22,8 +20,5 @@ export interface typeWelcomeInfoProps
       link: string;
     }[];
   };
-  importantData: {
-    item: string;
-  }[];
   editProfileTeam: () => void;
 }

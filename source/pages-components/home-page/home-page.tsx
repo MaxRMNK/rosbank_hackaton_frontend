@@ -1,7 +1,5 @@
 'use client';
 
-// import Image from 'next/image';
-// import styles from './styles.module.scss';
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
@@ -40,19 +38,22 @@ export const HomePage: React.FC = () => {
   // });
 
   const [report, setReport] = React.useState(summaryData.notice);
-  // const [report, setReport] = React.useState({
-  //   title: '4 запроса на развитие навыков ожидают согласования' || '',
-  //   description:
-  //     'У вас 4 новых запроса от Андрея Сухова и Кирилла Федорова на развитие навыков React, Python' ||
-  //     '',
-  // });
+
+  const [isCloseNotice, setCloseNotice] = React.useState(false);
 
   // Действия для кнопок в блоке уведомлений
-  const handleReadMore = () => {
+  const handleNoticeClose = () => {
+    setCloseNotice(true);
+  };
+  const handleNoticeReadMore = () => {
     console.log('Подробнее');
   };
-  const handleApprove = () => {
+  const handleNoticeApprove = () => {
     console.log('Согласовать');
+  };
+
+  const editProfileTeam = () => {
+    console.log('Редактировать профиль команды');
   };
 
   // Переход к разделам страницы
@@ -72,17 +73,22 @@ export const HomePage: React.FC = () => {
     <>
       <Header links={links} userInfo={userInfo} />
 
-      {(report.title || report.description) && (
+      {report.title && (
         <Notification
           title={report.title}
-          description={report.description}
-          handleReadMore={handleReadMore}
-          handleApprove={handleApprove}
+          handleReadMore={handleNoticeReadMore}
+          handleApprove={handleNoticeApprove}
+          handleClose={handleNoticeClose}
+          isClose={isCloseNotice}
         />
       )}
 
       <main className={cn(classes.main)}>
-        <WelcomeInfo welcomeData={summaryData.welcomeData} />
+        <WelcomeInfo
+          welcomeData={summaryData.welcomeData}
+          importantData={summaryData.important}
+          editProfileTeam={editProfileTeam}
+        />
 
         <Indicators
           indicatorsData={summaryData.indicators}

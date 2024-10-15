@@ -46,13 +46,5 @@ export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {
         ></button>
       </div>
     </div>
-
-    // <div className={cn(classes.one)}>
-    //   <TeamMember
-    //     photo={user.userPhoto}
-    //     firstName={user.firstName}
-    //     lastName={user.lastName}
-    //   />
-    // </div>
   );
 };

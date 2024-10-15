@@ -21,13 +21,7 @@ export const IndicatorsCard: React.FC<typeIndicatorsCardProps> = props => {
           fieldData.map(function (item, index) {
             return (
               <li className={cn(classes.item, classes[item.name])} key={index}>
-                <span className={cn(classes.title)}>
-                  {item.title}
-                  {/* {fieldTitle[item.name]} */}
-                  {/* {item.info !== null && item.info !== '' && (
-                    <span className={cn(classes.info)}>{item.info}</span>
-                  )} */}
-                </span>
+                <span className={cn(classes.title)}>{item.title}</span>
                 <span
                   className={cn(classes.value, {
                     [classes.alert]: item.alert,

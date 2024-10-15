@@ -16,7 +16,7 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
   };
 
   return (
-    <div className={cn(className, classes.keyIndicators)}>
+    <section className={cn(className, classes.keyIndicators)}>
       <h2 className={cn(classes.title)}>Ключевые показатели</h2>
       <div className={cn(classes.navigate)}>
         <div className={cn(classes.tabs)}>
@@ -54,6 +54,6 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
       ) : (
         <SkillsStats className={cn(classes.skillsTab)} />
       )}
-    </div>
+    </section>
   );
 };

@@ -9,12 +9,11 @@
 .busFactor {
   padding: 30px;
   border-radius: 12px;
-  background-color: var(--red-color);
-  color: var(--white-color);
+  background-color: var(--white-smoke-color);
+  color: var(--grey-dark-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // height: 250px;
 
   .number {
     font-size: 64px;
@@ -26,7 +25,6 @@
     padding-left: 34px;
     font-size: 20px;
     line-height: 27px;
-    color: var(--white-color);
     background-repeat: no-repeat;
     background-position: left center;
     background-image: url('./images/bas-factor-icon.svg');
@@ -36,7 +34,16 @@
   .subtitle {
     font-size: 16px;
     line-height: 18px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.01px;
+  }
+
+  &.alert {
+    background-color: var(--red-color);
     color: var(--white-color);
+
+    .title {
+      color: var(--white-color);
+      background-image: url('./images/bas-factor-icon-white.svg');
+    }
   }
 }

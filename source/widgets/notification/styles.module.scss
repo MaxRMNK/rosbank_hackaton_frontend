@@ -1,28 +1,38 @@
 .notification {
-  padding: 30px 100px;
+  padding: 20px 100px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 40px;
   background-color: var(--white-smoke-color);
   width: 100%;
   position: relative;
+  // opacity: 1;
+  max-height: 1000px;
+  transition: all 0.3s ease;
 
   &.close {
-    display: none;
-    // transition: 0.3s;
+    // opacity: 0;
+    max-height: 0;
+    padding: 0 100px;
+
+    * {
+      display: none;
+    }
   }
 }
 
 .message {
-  background-image: url('./images/info-icon.svg');
+  padding: 8px 0 8px 30px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.005px;
+  // font-weight: 600;
   background-repeat: no-repeat;
-  background-position: left 0 top 4px;
-  padding: 0 0 0 44px;
-}
-
-.description {
-  font-size: 16px;
-  line-height: 32px;
+  background-position: left center;
+  background-size: 20px auto;
+  background-clip: padding-box;
+  background-image: url('./images/info-icon.svg');
 }
 
 .actions {

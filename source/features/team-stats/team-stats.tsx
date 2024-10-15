@@ -6,7 +6,7 @@ import { TeamTableRow } from '../team-table-row';
 // import Image from 'next/image';
 
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
-  const { teamData } = props;
+  const { teamData, className } = props;
 
   const level = [
     { name: 'none', title: 'Не владеет' },
@@ -17,24 +17,17 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   ];
 
   const status = [
-    { name: 'low', title: 'Соответсвтует' },
-    { name: 'normal', title: 'Не соответсвтует' },
+    { name: 'low', title: 'Соответствует' },
+    { name: 'normal', title: 'Не соответствует' },
     { name: 'improving', title: 'В процессе развития' },
   ];
-
-  const [checked, setChecked] = React.useState(false);
-
-  const chengeCheckbox = (e: any) => {
-    setChecked(!checked);
-    // console.log(e?.target?.name);
-  };
 
   const requestForTraining = (e: any) => {
     console.log('Отправить запрос на обучение', e);
   };
 
   return (
-    <div className={cn(classes.team)}>
+    <div className={cn(className, classes.team)}>
       <div className={cn(classes.glossary)}>
         <ul className={cn(classes.block, classes.blockLevel)}>
           {level.map((item, index) => (

@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.title {
-  margin: 0 0 15px;
-}
-
 .report {
   padding: 30px;
   background-color: var(--white-smoke-color);
@@ -19,87 +15,35 @@
   font-size: 16px;
   line-height: 32px;
 
-  .items {
-    list-style-image: url('./images/marker.png');
-  }
-
-  .item {
-    font-size: 16px;
-    line-height: 32px;
-    margin: 0 0 0 13px;
-    padding: 0 0 0 5px;
-  }
-}
-
-.aboutTeam {
-  padding: 30px;
-  border-radius: 12px;
-  box-sizing: border-box;
-  border: 1px solid var(--grey-light-color);
-  display: flex;
-  flex-direction: column;
-
-  .description {
-    font-size: 14px;
-    line-height: 24px;
+  .title {
     margin: 0 0 10px;
   }
 
-  .tagList {
-    margin: 0 0 30px 0;
-  }
-}
-
-.infoTitle {
-  margin: 0 0 10px 0;
-}
-
-.info {
-  display: flex;
-  gap: 30px;
-
-  .manager {
-    max-width: 133px;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  .details {
-    flex-grow: 2;
-    // padding: 4px 0;
-  }
-}
-
-.linksList {
-  // flex-grow: 2;
-  display: flex;
-  gap: 10px;
-
-  .link {
-    display: block;
-    padding: 4px 16px 4px 42px;
-    box-sizing: border-box;
-    border: 1px solid var(--grey-light-color);
-    border-radius: 12px;
-    background-repeat: no-repeat;
-    background-position: left 16px center;
+  .subtitle {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 22px;
     color: var(--grey-dark-color);
+  }
+
+  .listItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // list-style-image: url('./images/marker.png');
+  }
+
+  .item {
     font-size: 14px;
-    line-height: 32px;
-    white-space: nowrap;
+    line-height: 20px;
+    letter-spacing: 0.5%;
+    margin: 0 0 12px;
+    padding: 0 0 0 18px;
 
-    &.wiki {
-      background-image: url('./images/wiki-icon.png');
-    }
-
-    &.jira {
-      background-image: url('./images/jira-icon.png');
-    }
-
-    &:hover {
-      border-color: var(--grey-light2-color);
-    }
+    background-image: url('./images/marker.png');
+    background-repeat: no-repeat;
+    background-position: left top 2px;
+    background-size: 9px auto;
+    background-clip: padding-box;
   }
 }

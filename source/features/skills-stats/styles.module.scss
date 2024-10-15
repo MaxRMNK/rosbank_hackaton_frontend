@@ -1,4 +1,10 @@
-// .tableTeam {}
+.sorry {
+  height: 200px;
+  background-color: var(--white-smoke-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tableHeader,
 .tableSkillsRow {

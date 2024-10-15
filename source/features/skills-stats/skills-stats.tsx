@@ -2,11 +2,10 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeSkillsStatsProps } from './types';
-import { TeamTableRow } from '../team-table-row';
-// import Image from 'next/image';
+// import { TeamTableRow } from '../team-table-row';
 
 export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
-  const {} = props;
+  const { className } = props;
 
   const [checked, setChecked] = React.useState(false);
 
@@ -20,16 +19,8 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
   };
 
   return (
-    <div className={cn(classes.one)}>
-      <div className={cn(classes.tableToggle)}>
-        Блоки переключателей
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={chengeCheckbox}
-          name="advanced"
-        />
-      </div>
+    <div className={cn(className, classes.skills)}>
+      {/* <div className={cn(classes.glossary)}>Пояснение к таблице</div> */}
 
       <div className={cn(classes.tableTeam)}>
         <div className={cn(classes.tableHeader)}>
@@ -43,8 +34,10 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
           <div className={cn(classes.targetLevel, classes.tableCell)}>
             Требуемый уровень
           </div>
-          <div className={cn(classes.alert, classes.tableCell)}>Y</div>
+          <div className={cn(classes.alert, classes.tableCell)}></div>
         </div>
+
+        <div className={cn(classes.sorry)}>Не успел сделать</div>
         {/* {teamData.map((item, index) => (
           <TeamTableRow
             key={index}
