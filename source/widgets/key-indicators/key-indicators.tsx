@@ -9,9 +9,9 @@ import { SkillsStats } from '@/source/features/skills-stats';
 export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
   const { teamData, className } = props;
 
-  const [activeTab, setActiveTab] = useState<string>('team');
+  const [activeTab, setActiveTab] = useState<'team' | 'skills'>('team');
 
-  const handleTabClick = (tab: string) => {
+  const handleTabClick = (tab: 'team' | 'skills') => {
     setActiveTab(tab);
   };
 
@@ -50,9 +50,18 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
       </div>
 
       {activeTab === 'team' ? (
-        <TeamStats teamData={teamData} className={cn(classes.teamTab)} />
+        <TeamStats
+          teamData={teamData}
+          className={cn(classes.tabContent, classes.teamTab, classes.activeTab)}
+        />
       ) : (
-        <SkillsStats className={cn(classes.skillsTab)} />
+        <SkillsStats
+          className={cn(
+            classes.tabContent,
+            classes.skillsTab,
+            classes.activeTab,
+          )}
+        />
       )}
     </section>
   );

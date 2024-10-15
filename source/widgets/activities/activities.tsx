@@ -18,12 +18,6 @@ import { TrainingCardList } from '@/source/features/training-card-list';
 export const Activities: React.FC<typeActivitiesProps> = props => {
   const { taskList, handleAddToPlan } = props;
 
-  const [isOpen, setIsOpen] = React.useState(true);
-
-  const handleChangeVisibility = () => {
-    setIsOpen(!isOpen);
-  };
-
   // Карточек изначально
   const initialCardCount = 4;
   // Каточек добавлять по клику "Еще"
@@ -36,6 +30,33 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
     // console.log('загрузить еще карточки');
     setVisibleCardCount(visibleCardCount + addVisibleCard);
   };
+
+  // ------------------------
+  const [isOpen, setIsOpen] = React.useState<boolean>(true);
+  const contentRef = React.useRef<HTMLDivElement | null>(null);
+  const [blockHeight, setBlockHeight] = React.useState<number>(0);
+
+  const handleChangeVisibility = () => {
+    setIsOpen(!isOpen);
+  };
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (contentRef.current) {
+        setBlockHeight(contentRef.current.scrollHeight);
+      }
+    };
+
+    // Установим начальный размер
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    // Очистка обработчика событий
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isOpen, visibleCardCount]);
 
   return (
     <section className={cn(classes.activities)}>
@@ -61,37 +82,19 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
       </div>
 
       <div
-        // ref={ref}
+        ref={contentRef}
         className={cn(classes.cardWrapper, { [classes.open]: isOpen })}
+        style={{
+          maxHeight: isOpen ? `${blockHeight}px` : '0',
+        }}
       >
         <TrainingCardList
-          // films={cards?.slice(0, roundedVisibleCardCount)}
           taskList={taskList?.slice(0, visibleCardCount)}
           addVisibleCard={addVisibleCard}
           summTask={taskList.length}
           handleAddToPlan={handleAddToPlan}
           handleGetMoreCards={handleGetMoreCards}
         />
-
-        {/* {taskList.map((item, index) => (
-          <TrainingCardList
-            key={index}
-            task={item}
-            handleAddToPlan={handleAddToPlan}
-            handleGetMoreCards={handleGetMoreCards}
-          />
-        ))} */}
-
-        {/* <div className={cn(classes.buttonWrapper)}>
-          <Button
-            variant="white"
-            className={cn(classes.more)}
-            onClick={handleGetMoreCards}
-            // disabled={true}
-          >
-            Показать еще
-          </Button>
-        </div> */}
       </div>
     </section>
   );
