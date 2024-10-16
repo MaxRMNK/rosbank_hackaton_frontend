@@ -16,15 +16,15 @@
 
 ## Сведения о команде
 
-- (Никита)[https://t.me/nikfromrus] - Product-менеджер
-- (Анна)[https://t.me/yudina_a] - Дизайнер
-- (Мария)[https://t.me/madam_entu] - Дизайнер
-- (Борис)[https://t.me/barudenko] - DA (аналитик данных)
-- (Макс)[https://t.me/MaxRMNK] - Frontend-разработчик
-- (Адель)[https://t.me/AIG3c] - Backend-разработчик
-- (Сергей)[https://t.me/serhiihabl] - Backend-разработчик
-- (Дмитрий)[https://t.me/d_strelen] - SA (системный аналитик)
-- (Басанг)[https://t.me/basang13] - BA (бизнес-аналитик)
+- [Никита](https://t.me/nikfromrus) - Product-менеджер
+- [Анна](https://t.me/yudina_a) - Дизайнер
+- [Мария](https://t.me/madam_entu) - Дизайнер
+- [Борис](https://t.me/barudenko) - DA (аналитик данных)
+- [Макс](https://t.me/MaxRMNK) - Frontend-разработчик
+- [Адель](https://t.me/AIG3c) - Backend-разработчик
+- [Сергей](https://t.me/serhiihabl) - Backend-разработчик
+- [Дмитрий](https://t.me/d_strelen) - SA (системный аналитик)
+- [Басанг](https://t.me/basang13) - BA (бизнес-аналитик)
 
 ## Инструкция по сборке и запуску
 
@@ -80,9 +80,9 @@ Next.js v.14
 
 ### Ссылки на фреймворки, библиотеки, иконки и шрифты
 
-(class.js)[https://www.npmjs.com/package/classes] - наследование классов
-(Classnames)[https://www.npmjs.com/package/classnames] - динамическое управление классами
+[class.js](https://www.npmjs.com/package/classes) - наследование классов
+[Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами
 
-(ESLint)[https://www.npmjs.com/package/eslint] — линтер, поиск проблемных паттернов проектирования и кода
-(Prettier)[https://www.npmjs.com/package/prettier] — форматирование кода
-(Husky)[https://www.npmjs.com/package/husky] - проверка кода и исправление ошибок
+[ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода
+[Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
+[Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
