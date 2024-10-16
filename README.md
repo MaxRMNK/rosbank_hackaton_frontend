@@ -74,7 +74,7 @@ npm start
 ## Стэк технологий
 
 - HTML5
-- Sass
+- Sass / SCSS
 - TypeScript v.5
 - React v.18
 - Next.js v.14
