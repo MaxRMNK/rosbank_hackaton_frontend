@@ -4,34 +4,22 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeActivitiesProps } from './types';
-// import { typeTrainingCardListProps } from '@/source/features/training-card-list/types';
-// import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/source/shared/ui/button';
-// import { AvatarGroup } from '@/source/shared/ui/avatar-group';
-// import { TagList } from '@/source/shared/ui/tag-list';
-// import { TrainingCard } from '@/source/features/training-card-list/training-card';
 import { TrainingCardList } from '@/source/features/training-card-list';
-
-// import taskData from '@/public/demo-task-list.json';
 
 export const Activities: React.FC<typeActivitiesProps> = props => {
   const { taskList, handleAddToPlan } = props;
 
-  // Карточек изначально
   const initialCardCount = 4;
-  // Каточек добавлять по клику "Еще"
   const addVisibleCard = 2;
 
   const [visibleCardCount, setVisibleCardCount] =
     React.useState(initialCardCount);
 
   const handleGetMoreCards = () => {
-    // console.log('загрузить еще карточки');
     setVisibleCardCount(visibleCardCount + addVisibleCard);
   };
 
-  // ------------------------
   const [isOpen, setIsOpen] = React.useState<boolean>(true);
   const contentRef = React.useRef<HTMLDivElement | null>(null);
   const [blockHeight, setBlockHeight] = React.useState<number>(0);
@@ -47,12 +35,12 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
       }
     };
 
-    // Установим начальный размер
+    // Let's set the initial size
     handleResize();
 
     window.addEventListener('resize', handleResize);
 
-    // Очистка обработчика событий
+    // Clearing the event handler
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -99,26 +87,3 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
     </section>
   );
 };
-
-// const handleChangeVisibility = () => {
-//   setIsOpen(!isOpen);
-//   console.log(ref.current?.clientHeight);
-// };
-
-// const ref = React.useRef<HTMLDivElement>(null);
-// const [height, setHeight] = React.useState(0);
-
-// // React.useLayoutEffect(() => {
-// //   setHeight(ref.current?.clientHeight);
-// // }, []);
-
-// React.useEffect(() => {
-//   function handleResize() {
-//     setHeight(ref.current?.clientHeight);
-//   }
-
-//   window.addEventListener('resize', handleWindowResize);
-//   return window.removeEventListener('resize', handleWindowResize);
-// }, []);
-
-// // console.log(ref);

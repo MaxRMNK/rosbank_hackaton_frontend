@@ -41,7 +41,7 @@ export const HomePage: React.FC = () => {
 
   const [isCloseNotice, setCloseNotice] = React.useState(false);
 
-  // Действия для кнопок в блоке уведомлений
+  // Actions for buttons in the notification block
   const handleNoticeClose = () => {
     setCloseNotice(true);
   };
@@ -56,7 +56,7 @@ export const HomePage: React.FC = () => {
     console.log('Редактировать профиль команды');
   };
 
-  // Переход к разделам страницы
+  // Jump to page sections
   const handleGoToTeam = () => {
     console.log('О команде');
   };
@@ -64,7 +64,7 @@ export const HomePage: React.FC = () => {
     console.log('О навыках');
   };
 
-  // Карточки активности
+  // Activity cards
   function handleAddToPlan(data: any) {
     console.log('запрос для редактирования плана развития сотрудников', data);
   }

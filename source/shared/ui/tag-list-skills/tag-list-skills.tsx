@@ -14,11 +14,8 @@ export const TagListSkills: React.FC<typeTagListSkillsProps> = props => {
   //   status= '',
   //  } = tags;
 
-  // Тегов изначально
   const initialTagCount = 9;
-  // Всего тегов
   const summTags = tags.length;
-  // Осталось тегов
   const tagsLeft = tags.length - initialTagCount;
 
   const visibleTag = tags?.slice(0, initialTagCount);
