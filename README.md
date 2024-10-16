@@ -18,6 +18,8 @@
 
 ## Сведения о команде
 
+**Команда #6**
+
 - [Никита](https://t.me/nikfromrus) - Product-менеджер
 - [Анна](https://t.me/yudina_a) - Дизайнер
 - [Мария](https://t.me/madam_entu) - Дизайнер
@@ -74,7 +76,6 @@ npm start
 - HTML5
 - Sass
 - TypeScript v.5
-- JavaScript ES6
 - React v.18
 - Next.js v.14
 
