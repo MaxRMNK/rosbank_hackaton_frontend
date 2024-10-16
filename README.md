@@ -71,20 +71,20 @@ npm start
 
 ## Стэк технологий
 
-HTML5
-Sass
-TypeScript v.5
-JavaScript ES6
-React v.18
-Next.js v.14
+* HTML5
+* Sass
+* TypeScript v.5
+* JavaScript ES6
+* React v.18
+* Next.js v.14
 
 Структура веб-приложения основана на архитектурном подходе **Feature-Sliced Design (FSD)**, который направлен на облегчение сопровождения приложения, его тестирования и масштабирования.
 
 ### Ссылки на фреймворки, библиотеки, иконки и шрифты
 
-[class.js](https://www.npmjs.com/package/classes) - наследование классов
-[Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами
+[class.js](https://www.npmjs.com/package/classes) - наследование классов 
+[Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами 
 
-[ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода
-[Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
-[Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
+[ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода 
+[Prettier](https://www.npmjs.com/package/prettier) — форматирование кода 
+[Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок 
