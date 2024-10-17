@@ -1,173 +1,65 @@
 [
   {
-    "skill": "C++",
-    "name": "cplusplus",
-    "image": "/public/image3.jpg",
+    "skillName": "cplusplus",
+    "title": "C++",
+    "image": "/skills-icon/c-32.png",
+    "keySkill": true,
+    "type": "softSkills",
     "level": {
-      "none": 0,
-      "beginner": 1,
-      "intermediate": 1,
-      "advanced": 2,
+      "none": 1,
+      "junior": 1,
+      "middle": 0,
+      "senior": 2,
       "expert": 1
     },
     "targetLevel": {
       "none": 0,
-      "beginner": 0,
-      "intermediate": 1,
-      "advanced": 2,
+      "junior": 1,
+      "middle": 1,
+      "senior": 2,
       "expert": 2
     }
   },
   {
-    "skill": "Java",
-    "name": "java",
-    "image": "/public/image3.jpg",
+    "skillName": "java",
+    "title": "Java",
+    "image": "/skills-icon/java.png",
+    "keySkill": true,
+    "type": "softSkills",
     "level": {
-      "none": 0,
-      "beginner": 1,
-      "intermediate": 1,
-      "advanced": 2,
+      "none": 1,
+      "junior": 1,
+      "middle": 0,
+      "senior": 1,
       "expert": 1
     },
     "targetLevel": {
       "none": 0,
-      "beginner": 0,
-      "intermediate": 1,
-      "advanced": 2,
+      "junior": 0,
+      "middle": 0,
+      "senior": 2,
       "expert": 2
     }
   },
   {
-    "skill": "Python",
-    "name": "python",
-    "image": "/public/image3.jpg",
+    "skillName": "python",
+    "title": "Python дабуди дабудай дляДлинны",
+    "image": "/skills-icon/python.png",
+    "keySkill": true,
+    "type": "hardSkills",
     "level": {
       "none": 0,
-      "beginner": 1,
-      "intermediate": 1,
-      "advanced": 2,
-      "expert": 1
+      "junior": 0,
+      "middle": 0,
+      "senior": 2,
+      "expert": 0
     },
     "targetLevel": {
       "none": 0,
-      "beginner": 0,
-      "intermediate": 1,
-      "advanced": 2,
-      "expert": 2
+      "junior": 0,
+      "middle": 0,
+      "senior": 2,
+      "expert": 0
     }
-  },
-
-  {
-    "userPhoto": "/user-photo2.jpg",
-    "firstName": "Константин",
-    "lastName": "Иванов",
-    "keyEmployee": true,
-    "userRole": "Backend-разработчик",
-    "grade": "Team Lead",
-    "skills": [
-      { "skill": "C++", "level": "beginner", "status": "normal" },
-      { "skill": "Java", "level": "none", "status": "low" },
-      { "skill": "Python", "level": "none", "status": "normal" },
-      { "skill": "Django", "level": "intermediate", "status": "normal" },
-      { "skill": "Json", "level": "none", "status": "normal" },
-      { "skill": "PostgreSQL", "level": "expert", "status": "normal" },
-      { "skill": "MySQL", "level": "beginner", "status": "normal" },
-      { "skill": "MongoDB", "level": "intermediate", "status": "normal" },
-      { "skill": "Git", "level": "intermediate", "status": "normal" },
-      { "skill": "Windows", "level": "advanced", "status": "improving" },
-      { "skill": "Linux", "level": "advanced", "status": "normal" },
-      { "skill": "Scrum", "level": "none", "status": "normal" },
-      { "skill": "Agile", "level": "none", "status": "normal" },
-      { "skill": "HTML5", "level": "beginner", "status": "normal" },
-      { "skill": "CSS3", "level": "beginner", "status": "normal" }
-    ],
-    "expertise": 0.65,
-    "progress": 0.9
-  },
-  {
-    "userPhoto": "/user-photo.jpg",
-    "firstName": "Викарий",
-    "lastName": "Триббиани",
-    "keyEmployee": false,
-    "userRole": "Backend-разработчик",
-    "grade": "Senior",
-    "skills": [
-      { "skill": "Java", "level": "advanced", "status": "normal" },
-      { "skill": "Python", "level": "none", "status": "normal" },
-      { "skill": "Django", "level": "expert", "status": "normal" },
-      { "skill": "Json", "level": "intermediate", "status": "normal" },
-      { "skill": "PostgreSQL", "level": "expert", "status": "normal" },
-      { "skill": "MongoDB", "level": "intermediate", "status": "low" },
-      { "skill": "Git", "level": "intermediate", "status": "improving" },
-      { "skill": "Windows", "level": "advanced", "status": "normal" },
-      { "skill": "Linux", "level": "advanced", "status": "normal" },
-      { "skill": "Scrum", "level": "none", "status": "normal" },
-      { "skill": "Agile", "level": "none", "status": "normal" },
-      { "skill": "HTML5", "level": "beginner", "status": "normal" },
-      { "skill": "CSS3", "level": "beginner", "status": "normal" }
-    ],
-    "expertise": 0.75,
-    "progress": 0.52
-  },
-  {
-    "userPhoto": "/user-photo3.jpg",
-    "firstName": "Константин",
-    "lastName": "Константинопольский",
-    "keyEmployee": true,
-    "userRole": "Frontend-разработчик",
-    "grade": "Middle",
-    "skills": [
-      { "skill": "HTML5", "level": "beginner", "status": "normal" },
-      { "skill": "CSS3", "level": "none", "status": "normal" },
-      { "skill": "Sass", "level": "advanced", "status": "normal" },
-      { "skill": "JavaScript", "level": "intermediate", "status": "normal" },
-      { "skill": "TypeSctipt", "level": "advanced", "status": "normal" },
-      { "skill": "React", "level": "expert", "status": "normal" },
-      { "skill": "Next.js", "level": "intermediate", "status": "low" },
-      { "skill": "Figma", "level": "beginner", "status": "normal" }
-    ],
-    "expertise": 0.8,
-    "progress": 0.81
-  },
-  {
-    "userPhoto": "/user-photo6.jpg",
-    "firstName": "Анна",
-    "lastName": "Иванова",
-    "keyEmployee": true,
-    "userRole": "Frontend-разработчик",
-    "grade": "Senior",
-    "skills": [
-      { "skill": "HTML5", "level": "advanced", "status": "normal" },
-      { "skill": "JavaScript", "level": "intermediate", "status": "normal" },
-      { "skill": "TypeSctipt", "level": "advanced", "status": "normal" },
-      { "skill": "React", "level": "expert", "status": "normal" },
-      { "skill": "CSS3", "level": "expert", "status": "normal" },
-      { "skill": "Sass", "level": "expert", "status": "normal" },
-      { "skill": "JavaScript", "level": "intermediate", "status": "normal" },
-      { "skill": "TypeSctipt", "level": "advanced", "status": "normal" },
-      { "skill": "React", "level": "expert", "status": "normal" },
-      { "skill": "Next.js", "level": "intermediate", "status": "low" },
-      { "skill": "Figma", "level": "beginner", "status": "normal" }
-    ],
-    "expertise": 0.03,
-    "progress": 0.81
-  },
-  {
-    "userPhoto": "/user-photo7.jpg",
-    "firstName": "Карина",
-    "lastName": "Кириллова",
-    "keyEmployee": true,
-    "userRole": "Бизнес-аналитик",
-    "grade": "Senior",
-    "skills": [
-      { "skill": "HTML5", "level": "advanced", "status": "low" },
-      { "skill": "CSS3", "level": "expert", "status": "normal" },
-      { "skill": "Figma", "level": "beginner", "status": "normal" },
-      { "skill": "Windows", "level": "advanced", "status": "improving" },
-      { "skill": "Scrum", "level": "none", "status": "normal" },
-      { "skill": "Agile", "level": "none", "status": "normal" }
-    ],
-    "expertise": 0.8,
-    "progress": 0.81
   }
 ]

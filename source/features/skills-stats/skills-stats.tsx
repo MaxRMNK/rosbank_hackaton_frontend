@@ -1,13 +1,19 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { typeSkillsStatsProps } from './types';
+import { typeSkillsStatsProps, typeSkills } from './types';
+import { SkillTableRow } from '../skill-table-row';
 // import { TeamTableRow } from '../team-table-row';
 
 export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
-  const { className } = props;
+  const { skillData, className } = props;
+
+  // Для сортировки по количеству человек в команде
+  // const [isPeople, setIsPeople] = useState<number>(0);
+
+  //---------------------
 
   // interface Level {
   //   none: number;
@@ -58,7 +64,7 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
     <div className={cn(className, classes.skills)}>
       {/* <div className={cn(classes.glossary)}>Пояснение к таблице</div> */}
 
-      <div className={cn(classes.tableTeam)}>
+      <div className={cn(classes.tableSkills)}>
         <div className={cn(classes.tableHeader)}>
           <div className={cn(classes.skills, classes.tableCell)}>
             Ключевые навыки
@@ -73,15 +79,26 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
           <div className={cn(classes.alert, classes.tableCell)}></div>
         </div>
 
-        <div className={cn(classes.sorry)}>Не успел сделать</div>
-        {/* {teamData.map((item, index) => (
-          <TeamTableRow
-            key={index}
-            user={item}
-            className={cn(classes.tableUserRow)}
-            requestForTraining={requestForTraining}
-          />
-        ))} */}
+        {/* <div className={cn(classes.sorry)}>Не успел сделать</div> */}
+        {skillData.map((item, index) => {
+          // Выводит только ключевые навыки
+          if (!item.keySkill) return;
+
+          return (
+            <SkillTableRow
+              key={index}
+              skillName={item.skillName}
+              title={item.title}
+              image={item.image}
+              keySkill={item.keySkill}
+              type={item.type}
+              level={item.level}
+              targetLevel={item.targetLevel}
+              // setIsPeople={setIsPeople}
+              className={cn(classes.tableSkillsRow)}
+            />
+          );
+        })}
       </div>
     </div>
   );

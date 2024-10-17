@@ -8,6 +8,7 @@ import userData from '@/public/user.json';
 import summaryData from '@/public/demo-summary.json';
 import taskData from '@/public/demo-task-list.json';
 import teamData from '@/public/demo-team.json';
+import skillData from '@/public/demo-skills.json';
 
 import { Header } from '@/source/widgets/header';
 import { Notification } from '@/source/widgets/notification';
@@ -98,6 +99,7 @@ export const HomePage: React.FC = () => {
 
         <KeyIndicators
           teamData={teamData}
+          skillData={skillData}
           className={cn(classes.keyIndicators)}
         />
 

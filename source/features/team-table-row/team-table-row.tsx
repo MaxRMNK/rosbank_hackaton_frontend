@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeTeamTableRowProps } from './types';
-import { TeamMember } from '../team-member';
+import { TeamMember } from '@/source/shared/team-member';
 import { TagListSkills } from '@/source/shared/ui/tag-list-skills';
 
 export const TeamTableRow: React.FC<typeTeamTableRowProps> = props => {

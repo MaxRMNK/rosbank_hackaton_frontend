@@ -50,6 +50,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 16px auto;
+  background-clip: padding-box;
   background-image: url('./images/show-icon.svg');
 
   &.show {

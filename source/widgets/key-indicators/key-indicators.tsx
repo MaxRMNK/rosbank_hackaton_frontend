@@ -9,7 +9,7 @@ import { TeamStats } from '@/source/features/team-stats';
 import { SkillsStats } from '@/source/features/skills-stats';
 
 export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
-  const { teamData, className } = props;
+  const { teamData, skillData, className } = props;
 
   const [activeTab, setActiveTab] = useState<'team' | 'skills'>('team');
 
@@ -51,13 +51,14 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
         )}
       </div>
 
-      {activeTab === 'team' ? (
+      {activeTab !== 'team' ? (
         <TeamStats
           teamData={teamData}
           className={cn(classes.tabContent, classes.teamTab, classes.activeTab)}
         />
       ) : (
         <SkillsStats
+          skillData={skillData}
           className={cn(
             classes.tabContent,
             classes.skillsTab,

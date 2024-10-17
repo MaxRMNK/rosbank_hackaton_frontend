@@ -6,7 +6,7 @@ import classes from './styles.module.scss';
 import Link from 'next/link';
 import { typeAboutTeamProps } from './types';
 import { TagList } from '@/source/shared/ui/tag-list';
-import { TeamMember } from '@/source/features/team-member';
+import { TeamMember } from '@/source/shared/team-member';
 
 export const AboutTeam: React.FC<typeAboutTeamProps> = props => {
   const { welcomeData, editProfileTeam } = props;

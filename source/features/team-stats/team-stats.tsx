@@ -10,9 +10,9 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
 
   const level = [
     { name: 'none', title: 'Не владеет' },
-    { name: 'beginner', title: 'Начинающий' },
-    { name: 'intermediate', title: 'Базовый' },
-    { name: 'advanced', title: 'Уверенный' },
+    { name: 'junior', title: 'Начинающий' },
+    { name: 'middle', title: 'Базовый' },
+    { name: 'senior', title: 'Уверенный' },
     { name: 'expert', title: 'Экспертный' },
   ];
 

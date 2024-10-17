@@ -1,0 +1,55 @@
+.skill {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  background-color: #fdd;
+}
+
+.imageWrapper {
+  position: relative;
+
+  .logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-light-color);
+    background-color: var(--grey-light-color);
+  }
+
+  .key {
+    position: absolute;
+    left: 21px;
+    top: -4px;
+    z-index: 5;
+    display: block;
+    width: 13px;
+    height: 13px;
+    line-height: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px auto;
+    background-image: url('./images/key-skill.png');
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  .type {
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--grey-dark-color);
+  }
+}

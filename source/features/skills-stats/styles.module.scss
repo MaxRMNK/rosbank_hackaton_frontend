@@ -9,8 +9,6 @@
 .tableHeader,
 .tableSkillsRow {
   display: grid;
-  // grid-template-columns: repeat(7, minmax(0, 1fr));
-  // gap: 10px;
   grid-template-columns:
     [skills] minmax(160px, 220px)
     [users] 35px
