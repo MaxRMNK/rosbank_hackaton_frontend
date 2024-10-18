@@ -8,19 +8,33 @@ import { TeamTableRow } from '../team-table-row';
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   const { teamData, teamLimit, className } = props;
 
-  const level = [
-    { name: 'none', title: 'Не владеет' },
-    { name: 'junior', title: 'Начинающий' },
-    { name: 'middle', title: 'Базовый' },
-    { name: 'senior', title: 'Уверенный' },
-    { name: 'expert', title: 'Экспертный' },
-  ];
+  const level = {
+    none: 'Не владеет',
+    junior: 'Начинающий',
+    middle: 'Базовый',
+    senior: 'Уверенный',
+    expert: 'Экспертный',
+  };
 
-  const status = [
-    { name: 'low', title: 'Соответствует' },
-    { name: 'normal', title: 'Не соответствует' },
-    { name: 'improving', title: 'В процессе развития' },
-  ];
+  const status = {
+    normal: 'Соответствует',
+    low: 'Не соответствует',
+    improving: 'В процессе развития',
+  };
+
+  // const level = [
+  //   { name: 'none', title: 'Не владеет' },
+  //   { name: 'junior', title: 'Начинающий' },
+  //   { name: 'middle', title: 'Базовый' },
+  //   { name: 'senior', title: 'Уверенный' },
+  //   { name: 'expert', title: 'Экспертный' },
+  // ];
+
+  // const status = [
+  //   { name: 'low', title: 'Соответствует' },
+  //   { name: 'normal', title: 'Не соответствует' },
+  //   { name: 'improving', title: 'В процессе развития' },
+  // ];
 
   // Получает только ключевых сотрудников
   const keyEmployees = teamData
@@ -34,7 +48,25 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   return (
     <div className={cn(className, classes.team)}>
       <div className={cn(classes.glossary)}>
-        <ul className={cn(classes.block, classes.blockLevel)}>
+        <ul className={cn(classes.listItems, classes.level)}>
+          {Object.entries(level).map(([key, value]) => (
+            <li className={cn(classes.item)} key={key}>
+              <span className={cn(classes.marker, classes[key])}></span>
+              {value}
+            </li>
+          ))}
+        </ul>
+
+        <ul className={cn(classes.listItems, classes.status)}>
+          {Object.entries(status).map(([key, value]) => (
+            <li className={cn(classes.item)} key={key}>
+              <span className={cn(classes.marker, classes[key])}></span>
+              {value}
+            </li>
+          ))}
+        </ul>
+
+        {/* <ul className={cn(classes.block, classes.blockLevel)}>
           {level.map((item, index) => (
             <li
               className={cn(classes.levelItem, classes[item.name])}
@@ -44,7 +76,8 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
             </li>
           ))}
         </ul>
-        <ul className={cn(classes.block, classes.blockStatus)}>
+
+        <ul className={cn(classes.listItems, classes.blockStatus)}>
           {status.map((item, index) => (
             <li
               className={cn(classes.statusItem, classes[item.name])}
@@ -53,7 +86,7 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
               {item.title}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
 
       <div className={cn(classes.tableTeam)}>

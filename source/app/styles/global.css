@@ -24,6 +24,10 @@
   --middle-level-color: #42434b;
   --senior-level-color: #99a7b8;
   --expert-level-color: #00234d;
+
+  --normal-status-color: #ffffff;
+  --low-status-color: #ffe8e1;
+  --improving-status-color: linear-gradient(135deg, #ffe8e1 50%, #000c1a 50%);
 }
 
 * {
