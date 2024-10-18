@@ -50,8 +50,7 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
       <div className={cn(classes.glossary)}>
         <ul className={cn(classes.listItems, classes.level)}>
           {Object.entries(level).map(([key, value]) => (
-            <li className={cn(classes.item)} key={key}>
-              <span className={cn(classes.marker, classes[key])}></span>
+            <li className={cn(classes.item, classes[key])} key={key}>
               {value}
             </li>
           ))}
@@ -59,34 +58,11 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
 
         <ul className={cn(classes.listItems, classes.status)}>
           {Object.entries(status).map(([key, value]) => (
-            <li className={cn(classes.item)} key={key}>
-              <span className={cn(classes.marker, classes[key])}></span>
+            <li className={cn(classes.item, classes[key])} key={key}>
               {value}
             </li>
           ))}
         </ul>
-
-        {/* <ul className={cn(classes.block, classes.blockLevel)}>
-          {level.map((item, index) => (
-            <li
-              className={cn(classes.levelItem, classes[item.name])}
-              key={index}
-            >
-              {item.title}
-            </li>
-          ))}
-        </ul>
-
-        <ul className={cn(classes.listItems, classes.blockStatus)}>
-          {status.map((item, index) => (
-            <li
-              className={cn(classes.statusItem, classes[item.name])}
-              key={index}
-            >
-              {item.title}
-            </li>
-          ))}
-        </ul> */}
       </div>
 
       <div className={cn(classes.tableTeam)}>

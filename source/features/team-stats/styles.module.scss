@@ -11,92 +11,49 @@
     display: flex;
     gap: 16px;
   }
+
   .item {
-    // padding: 8px 0;
     display: flex;
     gap: 8px;
     align-items: center;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;
-  }
 
-  .marker {
-    display: block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 1px solid var(--grey-color);
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0 0 0 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    background-clip: padding-box;
 
     &.none {
-      background: var(--none-level-color);
+      background-image: url('./images/level-none.svg');
     }
     &.junior {
-      background: var(--junior-level-color);
+      background-image: url('./images/level-beginner.svg');
     }
     &.middle {
-      background: var(--middle-level-color);
+      background-image: url('./images/level-intermediate.svg');
     }
     &.senior {
-      background: var(--senior-level-color);
+      background-image: url('./images/level-advanced.svg');
     }
     &.expert {
-      background: var(--expert-level-color);
+      background-image: url('./images/level-expert.svg');
     }
 
-    //---
     &.normal {
-      background: var(--normal-status-color);
+      background-image: url('./images/status-normal.svg');
     }
     &.low {
-      background: var(--low-status-color);
+      background-image: url('./images/status-low.svg');
     }
     &.improving {
-      background: var(--improving-status-color);
+      background-image: url('./images/status-improving.svg');
     }
   }
 }
-
-// .levelItem,
-// .statusItem {
-//   margin: 0;
-//   padding: 0 0 0 24px;
-//   font-size: 12px;
-//   line-height: 16px;
-//   font-weight: 600;
-//   display: block;
-//   background-repeat: no-repeat;
-//   background-position: left center;
-//   background-size: 16px 16px;
-//   background-clip: padding-box;
-
-//   // &.none {
-//   //   background-image: url('./images/level-none.svg');
-//   // }
-//   // &.junior {
-//   //   background-image: url('./images/level-beginner.svg');
-//   // }
-//   // &.middle {
-//   //   background-image: url('./images/level-intermediate.svg');
-//   // }
-//   // &.senior {
-//   //   background-image: url('./images/level-advanced.svg');
-//   // }
-//   // &.expert {
-//   //   background-image: url('./images/level-expert.svg');
-//   // }
-
-//   // &.normal {
-//   //   background-image: url('./images/status-normal.svg');
-//   // }
-//   // &.low {
-//   //   background-image: url('./images/status-low.svg');
-//   // }
-//   // &.improving {
-//   //   background-image: url('./images/status-improving.svg');
-//   // }
-// }
 
 .tableHeader,
 .tableUserRow {
@@ -130,9 +87,9 @@
   line-height: 18px;
   font-weight: 600;
   color: var(--grey-dark-color);
-  border-bottom: 1px solid var(--grey-light-color);
+  // border-bottom: 1px solid var(--grey-light-color);
 
-  // &:hover {
-  //   background-color: var(--white-smoke-color);
-  // }
+  &:hover {
+    background-color: var(--white-smoke-color);
+  }
 }

@@ -25,6 +25,8 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    border: 1px solid var(--grey-color);
+    box-sizing: border-box;
 
     &.none {
       background-color: var(--none-level-color);
