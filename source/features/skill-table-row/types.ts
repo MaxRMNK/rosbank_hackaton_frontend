@@ -10,13 +10,11 @@ export interface typeLevel {
 
 export interface typeSkillTableRowProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  skillName: string;
+  // skillName: string;
   title: string;
   image: string;
   keySkill?: boolean;
   type: string;
   level: typeLevel;
   targetLevel: typeLevel;
-  // sumPeople?: number;
-  // setIsPeople: React.Dispatch<React.SetStateAction<number>>;
 }

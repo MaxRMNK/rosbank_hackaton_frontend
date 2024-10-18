@@ -11,16 +11,16 @@ export const SkillInfo: React.FC<typeSkillInfoProps> = props => {
     hardSkills: 'Технический навык',
   };
 
-  function getStringValueByKey(
+  const getStringValueByKey = (
     obj: Record<string, any>,
     key: string,
-  ): string | null {
+  ): string | null => {
     if (key in obj) {
       const value = obj[key];
       return typeof value === 'string' ? value : null; // Вернем значение как строку, если оно этого типа
     }
     return null; // Возвращаем null, если ключ не найден в объекте
-  }
+  };
   const skillType = getStringValueByKey(typeName, type);
 
   return (

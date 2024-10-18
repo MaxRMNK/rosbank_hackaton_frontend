@@ -51,7 +51,7 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
         )}
       </div>
 
-      {activeTab !== 'team' ? (
+      {activeTab == 'team' ? (
         <TeamStats
           teamData={teamData}
           className={cn(classes.tabContent, classes.teamTab, classes.activeTab)}

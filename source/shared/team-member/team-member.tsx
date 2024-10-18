@@ -12,14 +12,16 @@ export const TeamMember: React.FC<typeTeamMemberProps> = props => {
 
   return (
     <div className={cn(classes.userInfo, className)}>
-      <Image
-        className={cn(classes.userAvatar)}
-        src={photo || DefaultAvatar}
-        alt=""
-        width={100}
-        height={100}
-      />
-      {keyEmployee && <span className={cn(classes.keyEmployee)}></span>}
+      <div className={cn(classes.imageWrapper)}>
+        <Image
+          className={cn(classes.userAvatar)}
+          src={photo || DefaultAvatar}
+          alt=""
+          width={100}
+          height={100}
+        />
+        {keyEmployee && <span className={cn(classes.key)}></span>}
+      </div>
       <span className={cn(classes.userName)}>{name}</span>
     </div>
   );

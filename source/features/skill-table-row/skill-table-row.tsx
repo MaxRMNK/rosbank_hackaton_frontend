@@ -4,32 +4,22 @@ import { typeSkillTableRowProps, typeLevel } from './types';
 import { SkillInfo } from '@/source/shared/skill-info';
 
 export const SkillTableRow: React.FC<typeSkillTableRowProps> = props => {
-  const {
-    skillName,
-    title,
-    image,
-    keySkill,
-    type,
-    level,
-    targetLevel,
-    // setIsPeople,
-    className,
-  } = props;
+  const { title, image, keySkill, type, level, targetLevel, className } = props;
 
+  // Считает сколько всего человек владеет навыком
   let sumPeople: number = 0;
-
   for (let value of Object.values(level)) {
     sumPeople += value;
   }
 
-  // Отрисовка элементов для "Уровень навыка"
+  // Выводит элементы для "Уровень навыка"
   const renderLevel = (obj: typeLevel) => {
     return Object.keys(obj).map(key => {
       if (obj[key] <= 0) return;
       return (
         <div
           key={key}
-          className={cn(classes.line, classes[key])}
+          className={cn(classes.chart, classes.line, classes[key])}
           style={{
             width: `${(obj[key] * 100) / sumPeople}%`,
           }}
@@ -40,19 +30,27 @@ export const SkillTableRow: React.FC<typeSkillTableRowProps> = props => {
     });
   };
 
-  // Отрисовка элементов для "Требуемый уровень"
+  // Выводит элементы для "Требуемый уровень"
   const renderTargetLevel = (obj: typeLevel) => {
     return Object.keys(obj).map(key => {
       if (obj[key] <= 0) return;
       return (
-        <div key={key} className={cn(classes.line, classes[key])}>
+        <div
+          key={key}
+          className={cn(classes.chart, classes.circle, classes[key])}
+        >
           {obj[key]}
         </div>
       );
     });
   };
 
-  // Предупреждение, если требования выше фактических уровней скилла
+  // Выводит предупреждение, если требования выше фактических уровней навыка
+  // !!!
+  // Нет формулы и объяснения от PM и аналитиков, как вычислять %
+  // соответствия или несоответствия уровней владения навыком.
+  // Поэтому картинка с предупреждением без пояснения:
+  // "🙁 уровень навыка соответствует требуемому на 54%"
   const compareLevel = (levelA: typeLevel, levelB: typeLevel): boolean => {
     for (const key in levelA) {
       if (
@@ -67,29 +65,19 @@ export const SkillTableRow: React.FC<typeSkillTableRowProps> = props => {
   };
   const compare = compareLevel(level, targetLevel);
 
-  // !!!
-  // Нет формулы и объяснения от PM и аналитиков, как
-  // вычислять % соответствия или несоответствия уровней.
-  // Поэтому пока картинка с Warning'ом без пояснения:
-  // "🙁 уровень навыка соответствует требуемому на 54%"
-
   return (
     <div className={cn(className, classes.tableRow)}>
-      <div
-        className={cn(classes.skills, classes.tableCell, {
-          [classes.key]: keySkill,
-        })}
-      >
-        <SkillInfo
-          title={title}
-          image={image}
-          keySkill={keySkill}
-          type={type}
-          className={cn(classes.skillInfo)}
-        />
-      </div>
+      <SkillInfo
+        className={cn(classes.skill, classes.tableCell)}
+        title={title}
+        image={image}
+        keySkill={keySkill}
+        type={type}
+      />
 
-      <div className={cn(classes.users, classes.tableCell)}>{sumPeople}</div>
+      <div className={cn(classes.users, classes.tableCell)}>
+        <span className={cn(classes.container)}>{sumPeople}</span>
+      </div>
 
       <div className={cn(classes.level, classes.tableCell)}>
         {renderLevel(level)}

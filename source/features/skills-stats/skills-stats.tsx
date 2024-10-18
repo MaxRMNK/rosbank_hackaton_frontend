@@ -1,14 +1,31 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeSkillsStatsProps } from './types';
-import { SkillTableRow } from '../skill-table-row';
+import { SkillTableRow } from '@/source/features/skill-table-row';
 
 export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
   const { skillData, className } = props;
 
+  const glossary = {
+    none: 'Не владеет',
+    junior: 'Начинающий',
+    middle: 'Базовый',
+    senior: 'Уверенный',
+    expert: 'Экспертный',
+  };
+
   return (
     <div className={cn(className, classes.skills)}>
-      {/* <div className={cn(classes.glossary)}>Пояснение к таблице</div> */}
+      <div className={cn(classes.glossary)}>
+        <ul className={cn(classes.listItems)}>
+          {Object.entries(glossary).map(([key, value]) => (
+            <li className={cn(classes.item)} key={key}>
+              <span className={cn(classes.marker, classes[key])}></span>
+              {value}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className={cn(classes.tableSkills)}>
         <div className={cn(classes.tableHeader)}>
@@ -25,7 +42,6 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
           <div className={cn(classes.alert, classes.tableCell)}></div>
         </div>
 
-        {/* <div className={cn(classes.sorry)}>Не успел сделать</div> */}
         {skillData.map((item, index) => {
           // Выводит только ключевые навыки
           if (!item.keySkill) return;
@@ -33,7 +49,7 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
           return (
             <SkillTableRow
               key={index}
-              skillName={item.skillName}
+              // skillName={item.skillName}
               title={item.title}
               image={item.image}
               keySkill={item.keySkill}

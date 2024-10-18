@@ -14,7 +14,7 @@
     },
     "targetLevel": {
       "none": 0,
-      "junior": 1,
+      "junior": 0,
       "middle": 1,
       "senior": 2,
       "expert": 2
@@ -24,7 +24,7 @@
     "skillName": "java",
     "title": "Java",
     "image": "/skills-icon/java.png",
-    "keySkill": true,
+    "keySkill": false,
     "type": "softSkills",
     "level": {
       "none": 1,
@@ -43,7 +43,7 @@
   },
   {
     "skillName": "python",
-    "title": "Python дабуди дабудай дляДлинны",
+    "title": "Python",
     "image": "/skills-icon/python.png",
     "keySkill": true,
     "type": "hardSkills",
@@ -59,6 +59,280 @@
       "junior": 0,
       "middle": 0,
       "senior": 2,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "django",
+    "title": "Django",
+    "image": "/skills-icon/django.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 1,
+      "junior": 1,
+      "middle": 0,
+      "senior": 0,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 0,
+      "senior": 2,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "json",
+    "title": "JSON",
+    "image": "/skills-icon/json.png",
+    "keySkill": true,
+    "type": "hardSkills",
+    "level": {
+      "none": 0,
+      "junior": 0,
+      "middle": 3,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 0,
+      "senior": 2,
+      "expert": 2
+    }
+  },
+  {
+    "skillName": "postgresql",
+    "title": "PostgreSQL",
+    "image": "/skills-icon/postgresql.png",
+    "keySkill": true,
+    "type": "hardSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 1,
+      "expert": 1
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 2,
+      "expert": 1
+    }
+  },
+  {
+    "skillName": "git",
+    "title": "Git",
+    "image": "/skills-icon/git.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 7,
+      "middle": 1,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 5,
+      "senior": 2,
+      "expert": 2
+    }
+  },
+  {
+    "skillName": "html5",
+    "title": "HTML5",
+    "image": "/skills-icon/html5.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 2,
+      "senior": 1,
+      "expert": 1
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 3,
+      "expert": 1
+    }
+  },
+  {
+    "skillName": "javascript",
+    "title": "JavaScript",
+    "image": "/skills-icon/javascript.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 2,
+      "expert": 1
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 2,
+      "expert": 1
+    }
+  },
+  {
+    "skillName": "typesctipt",
+    "title": "TypeSctipt",
+    "image": "/skills-icon/typesctipt.png",
+    "keySkill": false,
+    "type": "hardSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 0,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 1,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "react",
+    "title": "React",
+    "image": "/skills-icon/react.png",
+    "keySkill": true,
+    "type": "hardSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 0,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 0,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "figma",
+    "title": "Figma",
+    "image": "/skills-icon/figma.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 0,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 1,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "photoshop",
+    "title": "Adobe Photoshop",
+    "image": "/skills-icon/photoshop.png",
+    "keySkill": true,
+    "type": "hardSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 0,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 1,
+      "middle": 1,
+      "senior": 0,
+      "expert": 0
+    }
+  },
+
+  {
+    "skillName": "miro",
+    "title": "Miro",
+    "image": "/skills-icon/miro.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 0,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 1,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "trello",
+    "title": "Trello",
+    "image": "/skills-icon/trello.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 0,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 1,
+      "expert": 0
+    }
+  },
+  {
+    "skillName": "windows",
+    "title": "Microsot Windows 11",
+    "image": "/skills-icon/windows.png",
+    "keySkill": true,
+    "type": "softSkills",
+    "level": {
+      "none": 0,
+      "junior": 1,
+      "middle": 0,
+      "senior": 1,
+      "expert": 0
+    },
+    "targetLevel": {
+      "none": 0,
+      "junior": 0,
+      "middle": 1,
+      "senior": 1,
       "expert": 0
     }
   }

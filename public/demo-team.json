@@ -111,5 +111,86 @@
     ],
     "expertise": 0.8,
     "progress": 0.81
+  },
+
+  {
+    "userPhoto": "/user-photo2.jpg",
+    "firstName": "Дмитрий",
+    "lastName": "Смирнов",
+    "keyEmployee": true,
+    "userRole": "Бизнес-аналитик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "Java", "level": "advanced", "status": "normal" },
+      { "skill": "Python", "level": "none", "status": "normal" },
+      { "skill": "Django", "level": "expert", "status": "normal" },
+      { "skill": "Json", "level": "intermediate", "status": "normal" },
+      { "skill": "PostgreSQL", "level": "expert", "status": "normal" },
+      { "skill": "MongoDB", "level": "intermediate", "status": "normal" },
+      { "skill": "Git", "level": "intermediate", "status": "normal" },
+      { "skill": "Windows", "level": "advanced", "status": "normal" },
+      { "skill": "Linux", "level": "advanced", "status": "normal" },
+      { "skill": "Scrum", "level": "none", "status": "normal" },
+      { "skill": "Agile", "level": "none", "status": "normal" },
+      { "skill": "HTML5", "level": "beginner", "status": "improving" },
+      { "skill": "CSS3", "level": "beginner", "status": "low" },
+      { "skill": "Figma", "level": "beginner", "status": "low" }
+    ],
+    "expertise": 0.8,
+    "progress": 0.44
+  },
+  {
+    "userPhoto": "/user-photo3.jpg",
+    "firstName": "Сергей",
+    "lastName": "Фёдоров",
+    "keyEmployee": true,
+    "userRole": "Бизнес-аналитик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "status": "normal" },
+      { "skill": "CSS3", "level": "expert", "status": "normal" },
+      { "skill": "Figma", "level": "beginner", "status": "normal" },
+      { "skill": "Windows", "level": "advanced", "status": "normal" },
+      { "skill": "Scrum", "level": "none", "status": "normal" },
+      { "skill": "Agile", "level": "none", "status": "normal" }
+    ],
+    "expertise": 0.3,
+    "progress": 0.61
+  },
+  {
+    "userPhoto": "/user-photo.jpg",
+    "firstName": "Илья",
+    "lastName": "Васильев",
+    "keyEmployee": true,
+    "userRole": "Бизнес-аналитик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "status": "normal" },
+      { "skill": "CSS3", "level": "expert", "status": "normal" },
+      { "skill": "Figma", "level": "beginner", "status": "normal" },
+      { "skill": "Windows", "level": "advanced", "status": "normal" },
+      { "skill": "Scrum", "level": "none", "status": "normal" },
+      { "skill": "Agile", "level": "none", "status": "normal" }
+    ],
+    "expertise": 0.55,
+    "progress": 0.7
+  },
+  {
+    "userPhoto": "/user-photo2.jpg",
+    "firstName": "Николай",
+    "lastName": "Кузнецов",
+    "keyEmployee": true,
+    "userRole": "Бизнес-аналитик",
+    "grade": "Senior",
+    "skills": [
+      { "skill": "HTML5", "level": "advanced", "status": "normal" },
+      { "skill": "CSS3", "level": "expert", "status": "normal" },
+      { "skill": "Figma", "level": "beginner", "status": "normal" },
+      { "skill": "Windows", "level": "advanced", "status": "normal" },
+      { "skill": "Scrum", "level": "none", "status": "normal" },
+      { "skill": "Agile", "level": "none", "status": "normal" }
+    ],
+    "expertise": 0.28,
+    "progress": 0.99
   }
 ]

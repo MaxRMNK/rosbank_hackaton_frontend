@@ -22,6 +22,12 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
     { name: 'improving', title: 'В процессе развития' },
   ];
 
+  const keyEmployees = teamData
+    // Получает только тех сотрудников, у которых keyEmployee = true
+    .filter(employee => employee.keyEmployee)
+    // Получает первые 10 строк
+    .slice(0, 10);
+
   const requestForTraining = (e: any) => {
     console.log('Отправить запрос на обучение', e);
   };
@@ -67,7 +73,8 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
           </div>
           <div className={cn(classes.action, classes.tableCell)}></div>
         </div>
-        {teamData.map((item, index) => (
+
+        {keyEmployees.map((item, index) => (
           <TeamTableRow
             key={index}
             user={item}

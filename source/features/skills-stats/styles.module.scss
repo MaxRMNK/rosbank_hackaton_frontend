@@ -1,9 +1,47 @@
-.sorry {
-  height: 200px;
-  background-color: var(--white-smoke-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.glossary {
+  padding: 20px 0;
+
+  .listItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .item {
+    padding: 8px 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+
+  .marker {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    &.none {
+      background-color: var(--none-level-color);
+    }
+    &.junior {
+      background-color: var(--junior-level-color);
+    }
+    &.middle {
+      background-color: var(--middle-level-color);
+    }
+    &.senior {
+      background-color: var(--senior-level-color);
+    }
+    &.expert {
+      background-color: var(--expert-level-color);
+    }
+  }
 }
 
 .tableHeader,

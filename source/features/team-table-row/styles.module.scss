@@ -1,44 +1,42 @@
-// .tableRow {}
-
 .tableCell {
   align-self: center;
   padding: 16px 12px;
 
+  &.user {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: var(--grey-dark-color);
+  }
+
   &.expertise,
   &.progress {
     justify-self: center;
+
+    .boxGreen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: var(--green-light-color);
+    }
+    .boxRed {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 24px;
+      border-radius: 4px;
+      background-color: var(--red-light-color);
+    }
   }
 
   &.action {
     justify-self: center;
     padding: 0;
   }
-}
-
-.user {
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 600;
-  color: var(--grey-dark-color);
-}
-
-.green {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 56px;
-  height: 24px;
-  border-radius: 4px;
-  background-color: var(--green-light-color);
-}
-.red {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 56px;
-  height: 24px;
-  border-radius: 4px;
-  background-color: var(--red-light-color);
 }
 
 .trainingButton {

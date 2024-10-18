@@ -2,33 +2,38 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  position: relative;
+  // position: relative;
 
-  .userAvatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-sizing: border-box;
-    border: 1px solid var(--grey-light-color);
-  }
-
-  .keyEmployee {
-    position: absolute;
-    left: 16px;
-    top: -5px;
-    z-index: 5;
-    filter: drop-shadow(1px 0 0 white) drop-shadow(0 1px 0 white)
-      drop-shadow(-1px 0 0 white) drop-shadow(0 -1px 0 white);
-    display: block;
-    width: 16px;
-    height: 14px;
+  .imageWrapper {
+    position: relative;
     line-height: 0;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 16px auto;
-    background-image: url('./images/key-employee.png');
+
+    .userAvatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-sizing: border-box;
+      border: 1px solid var(--grey-light-color);
+    }
+
+    .key {
+      position: absolute;
+      left: 16px;
+      top: -5px;
+      z-index: 5;
+      filter: drop-shadow(1px 0 0 white) drop-shadow(0 1px 0 white)
+        drop-shadow(-1px 0 0 white) drop-shadow(0 -1px 0 white);
+      display: block;
+      width: 16px;
+      height: 14px;
+      line-height: 0;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px auto;
+      background-image: url('./images/key-employee.png');
+    }
   }
 
   .userName {

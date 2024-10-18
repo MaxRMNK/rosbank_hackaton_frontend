@@ -1,13 +1,13 @@
 .skill {
   display: flex;
   align-items: flex-start;
+  // align-items: center;
   gap: 8px;
-  padding: 12px;
-  background-color: #fdd;
 }
 
 .imageWrapper {
   position: relative;
+  line-height: 0;
 
   .logo {
     width: 32px;

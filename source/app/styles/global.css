@@ -18,6 +18,12 @@
   --yellow-primrose-color: #e7e49a;
 
   --green-light-color: #ddf5c5;
+
+  --none-level-color: #eea4b1;
+  --junior-level-color: #e10d34;
+  --middle-level-color: #42434b;
+  --senior-level-color: #99a7b8;
+  --expert-level-color: #00234d;
 }
 
 * {

@@ -63,31 +63,12 @@
   }
 }
 
-// .cardWrapper {
-//   // max-height: 0;
-//   height: 0px;
-//   line-height: 0px;
-//   overflow: hidden;
-//   transition: all 0.5s;
-
-//   &.open {
-//     // max-height: 200px;
-//     height: 100%;
-//     line-height: 27px;
-//     // max-height: max-content;
-//   }
-// }
-
 .cardWrapper {
-  // max-height: 0;
   overflow: hidden;
   line-height: 0;
   transition: all 0.3s;
 
   &.open {
-    // max-height: 10000px;
-    // height: 100%;
     line-height: 27px;
-    // max-height: max-content;
   }
 }

@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-export interface typeSkills {
+interface typeSkills {
   skillName: string;
   title: string;
   image: string;
@@ -20,7 +20,7 @@ export interface typeSkills {
     senior: number;
     expert: number;
   };
-  sumPeople?: number;
+  // sumPeople?: number;
 }
 
 export interface typeSkillsStatsProps
