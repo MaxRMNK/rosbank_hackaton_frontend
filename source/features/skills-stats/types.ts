@@ -26,4 +26,5 @@ interface typeSkills {
 export interface typeSkillsStatsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   skillData: typeSkills[];
+  skillLimit: number;
 }

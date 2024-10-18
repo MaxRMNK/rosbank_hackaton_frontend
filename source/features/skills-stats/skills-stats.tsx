@@ -4,7 +4,7 @@ import { typeSkillsStatsProps } from './types';
 import { SkillTableRow } from '@/source/features/skill-table-row';
 
 export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
-  const { skillData, className } = props;
+  const { skillData, skillLimit, className } = props;
 
   const glossary = {
     none: 'Не владеет',
@@ -13,6 +13,11 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
     senior: 'Уверенный',
     expert: 'Экспертный',
   };
+
+  // Получает только ключевые скиллы
+  const keySkills = skillData
+    .filter(skill => skill.keySkill)
+    .slice(0, skillLimit);
 
   return (
     <div className={cn(className, classes.skills)}>
@@ -42,24 +47,19 @@ export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
           <div className={cn(classes.alert, classes.tableCell)}></div>
         </div>
 
-        {skillData.map((item, index) => {
-          // Выводит только ключевые навыки
-          if (!item.keySkill) return;
-
-          return (
-            <SkillTableRow
-              key={index}
-              // skillName={item.skillName}
-              title={item.title}
-              image={item.image}
-              keySkill={item.keySkill}
-              type={item.type}
-              level={item.level}
-              targetLevel={item.targetLevel}
-              className={cn(classes.tableSkillsRow)}
-            />
-          );
-        })}
+        {keySkills.map((item, index) => (
+          <SkillTableRow
+            key={index}
+            // skillName={item.skillName}
+            title={item.title}
+            image={item.image}
+            keySkill={item.keySkill}
+            type={item.type}
+            level={item.level}
+            targetLevel={item.targetLevel}
+            className={cn(classes.tableSkillsRow)}
+          />
+        ))}
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { TeamTableRow } from '../team-table-row';
 // import Image from 'next/image';
 
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
-  const { teamData, className } = props;
+  const { teamData, teamLimit, className } = props;
 
   const level = [
     { name: 'none', title: 'Не владеет' },
@@ -22,11 +22,10 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
     { name: 'improving', title: 'В процессе развития' },
   ];
 
+  // Получает только ключевых сотрудников
   const keyEmployees = teamData
-    // Получает только тех сотрудников, у которых keyEmployee = true
     .filter(employee => employee.keyEmployee)
-    // Получает первые 10 строк
-    .slice(0, 10);
+    .slice(0, teamLimit);
 
   const requestForTraining = (e: any) => {
     console.log('Отправить запрос на обучение', e);

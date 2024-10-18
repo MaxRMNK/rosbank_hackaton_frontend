@@ -18,6 +18,9 @@ import { Activities } from '@/source/widgets/activities';
 import { KeyIndicators } from '@/source/widgets/key-indicators';
 
 export const HomePage: React.FC = () => {
+  const teamLimit = 7;
+  const skillLimit = 7;
+
   const [links, setLinks] = React.useState([
     { title: 'Организация', link: '/404' },
     {
@@ -101,6 +104,8 @@ export const HomePage: React.FC = () => {
           teamData={teamData}
           skillData={skillData}
           className={cn(classes.keyIndicators)}
+          teamLimit={teamLimit}
+          skillLimit={skillLimit}
         />
 
         <Activities taskList={taskData} handleAddToPlan={handleAddToPlan} />

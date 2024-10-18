@@ -27,4 +27,6 @@ export interface typeKeyIndicatorsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   teamData: typeTeamStatsProps['teamData'];
   skillData: skills[];
+  teamLimit: number;
+  skillLimit: number;
 }
