@@ -55,13 +55,25 @@
         "name": "allEmployees",
         "title": "Все сотрудники",
         "value": 21,
-        "info": null
+        "status": "normal"
       },
       {
         "name": "keyEmployees",
         "title": "Ключевые сотрудники",
         "value": 11,
-        "info": "Подсказка для ToolTip"
+        "status": "normal"
+      },
+      {
+        "name": "complianceLevelAll",
+        "title": "Средний уровень соответствия всех сотрудников",
+        "value": "69%",
+        "status": "alert"
+      },
+      {
+        "name": "complianceLevelKey",
+        "title": "Средний уровень соответствия ключевых сотрудников",
+        "value": "75%",
+        "status": "ok"
       }
     ],
     "skills": [
@@ -69,14 +81,25 @@
         "name": "normal",
         "title": "Соответствуют требуемому уровню",
         "value": 11,
-        "info": null
+        "status": "normal"
       },
       {
         "name": "attention",
         "title": "Требуют развития",
         "value": 8,
-        "info": null,
-        "alert": true
+        "status": "alert"
+      },
+      {
+        "name": "complianceSkillsAll",
+        "title": "Средний уровень соответствия требуемому уровню",
+        "value": "уверенный",
+        "status": "normal"
+      },
+      {
+        "name": "complianceSkillsKey",
+        "title": "Средний уровень прогресса (сравнение в динамике)",
+        "value": "30%",
+        "status": "ok"
       }
     ]
   }

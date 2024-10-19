@@ -94,11 +94,7 @@ export const HomePage: React.FC = () => {
           editProfileTeam={editProfileTeam}
         />
 
-        <Indicators
-          indicatorsData={summaryData.indicators}
-          handleGoToTeam={handleGoToTeam}
-          handleGoToSkills={handleGoToSkills}
-        />
+        <Indicators indicatorsData={summaryData.indicators} />
 
         <KeyIndicators
           teamData={teamData}

@@ -29,8 +29,8 @@
 }
 
 .list {
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0 0 20px;
   padding: 0;
   list-style: none;
@@ -67,29 +67,15 @@
   font-weight: 600;
   padding: 4px 6px;
   border-radius: 8px;
-  background-color: var(--grey-light-color);
+  // background-color: var(--grey-light-color);
 
-  &.alert {
-    background-color: var(--red-light-color);
+  &.normal {
+    background: var(--grey-light-color);
   }
-}
-
-.linkWrapper {
-  flex-grow: 2;
-  display: flex;
-  align-items: flex-end;
-
-  .link {
-    padding-left: 25px;
-    font-size: 14px;
-    line-height: 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-image: url('./images/more-icon.png');
-    background-size: 20px auto;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  &.ok {
+    background: var(--green-light-color);
+  }
+  &.alert {
+    background: var(--red-light-color);
   }
 }

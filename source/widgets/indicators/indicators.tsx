@@ -1,14 +1,11 @@
-'use client';
-
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeIndicatorsProps } from './types';
-import Link from 'next/link';
 import { IndicatorsCard } from '@/source/features/indicators-card';
 
 export const Indicators: React.FC<typeIndicatorsProps> = props => {
-  const { indicatorsData, handleGoToTeam, handleGoToSkills } = props;
+  const { indicatorsData } = props;
 
   const [isAlert, setIsAlert] = React.useState<boolean>(false);
 
@@ -28,15 +25,13 @@ export const Indicators: React.FC<typeIndicatorsProps> = props => {
       </div>
 
       <IndicatorsCard
-        handleClick={handleGoToTeam}
         type="team"
-        className={cn(classes.team)}
         title={'Состав команды'}
+        className={cn(classes.team)}
         fieldData={indicatorsData.team}
       />
 
       <IndicatorsCard
-        handleClick={handleGoToSkills}
         type="skills"
         className={cn(classes.skills)}
         title={'Ключевые навыки'}

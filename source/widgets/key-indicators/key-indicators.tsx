@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';

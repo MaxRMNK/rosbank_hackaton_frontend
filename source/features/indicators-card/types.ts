@@ -3,14 +3,12 @@ import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 export interface typeIndicatorsCardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  handleClick: () => void;
   type: string;
   title: string;
   fieldData: {
     name: string;
     title: string;
-    value: number;
-    info?: null | string;
-    alert?: boolean;
+    value: number | string;
+    status: string; // 'normal' | 'ok' | 'alert'
   }[];
 }
