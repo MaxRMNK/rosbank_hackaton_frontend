@@ -1,5 +1,5 @@
 import { HTMLAttributes, DetailedHTMLProps } from 'react';
-import { typeIndicatorsCardProps } from '@/source/features/indicators-card/types';
+import { typeIndicatorsCardProps } from '@/source/shared/indicators-card/types';
 
 export interface typeIndicatorsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {

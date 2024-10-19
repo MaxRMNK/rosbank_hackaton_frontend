@@ -5,12 +5,14 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeActivitiesProps } from './types';
 import Link from 'next/link';
-import { TrainingCardList } from '@/source/features/training-card-list';
+import { TrainingCardList } from '@/source/shared/training-card-list';
 
 export const Activities: React.FC<typeActivitiesProps> = props => {
   const { taskList, handleAddToPlan } = props;
 
+  // Карточек показывать
   const initialCardCount = 4;
+  // Карточек добавлять
   const addVisibleCard = 2;
 
   const [visibleCardCount, setVisibleCardCount] =

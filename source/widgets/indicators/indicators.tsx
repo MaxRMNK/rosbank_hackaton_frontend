@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeIndicatorsProps } from './types';
-import { IndicatorsCard } from '@/source/features/indicators-card';
+import { IndicatorsCard } from '@/source/shared/indicators-card';
 
 export const Indicators: React.FC<typeIndicatorsProps> = props => {
   const { indicatorsData } = props;

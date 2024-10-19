@@ -60,14 +60,6 @@ export const HomePage: React.FC = () => {
     console.log('Редактировать профиль команды');
   };
 
-  // Jump to page sections
-  const handleGoToTeam = () => {
-    console.log('О команде');
-  };
-  const handleGoToSkills = () => {
-    console.log('О навыках');
-  };
-
   // Activity cards
   function handleAddToPlan(data: any) {
     console.log('запрос для редактирования плана развития сотрудников', data);

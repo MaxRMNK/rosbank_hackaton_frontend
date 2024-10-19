@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 // import { StaticImageData } from 'next/image';
-import { typeUserInfoProps } from '@/source/features/header-user/types';
+import { typeUserInfoProps } from '@/source/shared/header-user/types';
 // import {
 //   headerMenuProps,
 //   headerMenuLinkWithChildren,

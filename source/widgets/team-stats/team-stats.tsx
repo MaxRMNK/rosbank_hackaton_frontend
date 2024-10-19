@@ -2,8 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeTeamStatsProps } from './types';
-import { TeamTableRow } from '../team-table-row';
-// import Image from 'next/image';
+import { TeamTableRow } from '@/source/shared/team-table-row';
 
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   const { teamData, teamLimit, className } = props;
@@ -21,20 +20,6 @@ export const TeamStats: React.FC<typeTeamStatsProps> = props => {
     low: 'Не соответствует',
     improving: 'В процессе развития',
   };
-
-  // const level = [
-  //   { name: 'none', title: 'Не владеет' },
-  //   { name: 'junior', title: 'Начинающий' },
-  //   { name: 'middle', title: 'Базовый' },
-  //   { name: 'senior', title: 'Уверенный' },
-  //   { name: 'expert', title: 'Экспертный' },
-  // ];
-
-  // const status = [
-  //   { name: 'low', title: 'Соответствует' },
-  //   { name: 'normal', title: 'Не соответствует' },
-  //   { name: 'improving', title: 'В процессе развития' },
-  // ];
 
   // Получает только ключевых сотрудников
   const keyEmployees = teamData

@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeWelcomeInfoProps } from './types';
-import { AboutTeam } from '@/source/features/about-team';
+import { AboutTeam } from '@/source/shared/about-team';
 
 export const WelcomeInfo: React.FC<typeWelcomeInfoProps> = props => {
   const { welcomeData, importantData, editProfileTeam } = props;
