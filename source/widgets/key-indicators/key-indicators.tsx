@@ -3,8 +3,8 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeKeyIndicatorsProps } from './types';
 import Link from 'next/link';
-import { TeamStats } from '@/source/widgets/team-stats';
-import { SkillsStats } from '@/source/widgets/skills-stats';
+import { TeamStats } from '@/source/features/table-team/team-stats';
+import { SkillsStats } from '@/source/features/table-skills/skills-stats';
 
 export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
   const { teamData, skillData, teamLimit, skillLimit, className } = props;

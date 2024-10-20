@@ -1,4 +1,4 @@
-import { typeTeamStatsProps } from '@/source/widgets/team-stats/types';
+import { typeTeamStatsProps } from '@/source/features/table-team/team-stats/types';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
 interface skills {

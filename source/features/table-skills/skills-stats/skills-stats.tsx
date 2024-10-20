@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeSkillsStatsProps } from './types';
-import { SkillTableRow } from '@/source/shared/skill-table-row';
+import { SkillTableRow } from '@/source/features/table-skills/skill-table-row';
 
 export const SkillsStats: React.FC<typeSkillsStatsProps> = props => {
   const { skillData, skillLimit, className } = props;
