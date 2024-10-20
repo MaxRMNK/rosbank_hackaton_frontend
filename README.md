@@ -14,8 +14,11 @@
 
 [Ссылка на сайт](https://maxrmnk.ru/)
 
-<!-- [<Бэкенд приложения](https://maxrmnk.ru/) -->
-<!-- [Макет в Figma]() -->
+[Фронтенд приложения](https://github.com/employee-competency-dashboard/rosbank_frontend)
+
+[Бэкенд приложения](https://github.com/employee-competency-dashboard/rosbank_backend)
+
+[Макет в Figma](https://www.figma.com/design/a6iIJ0lx8hw9e2FC66UoCi/%D0%A0%D0%BE%D1%81%D0%B1%D0%B0%D0%BD%D0%BA_%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD?node-id=279-7680&node-type=canvas&t=PJmbfuKvFB80lSea-0)
 
 ## Команда #6. Состав
 
