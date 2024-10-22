@@ -57,6 +57,10 @@
 [![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/)
 [![Sass][shields-Sass-domain]](https://sass-lang.com/)
 
+[![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg?maxAge=2592000)](https://bintray.com/asciidoctor/maven/asciidoctorj)
+
+[![Bintray](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=3600)](https://bintray.com/blocke/releases/scalajack)
+
 ## Стэк технологий
 
 - HTML5
