@@ -53,13 +53,32 @@
 `npm fix` — запуск Prettier.
 
 [![Feature-Sliced Design][shields-fsd-domain]](https://feature-sliced.design/)
+[![Vite][shields-vite-domain]](https://vitejs.dev/)
 [![React][shields-react-domain]](https://react.dev/)
+[![React Router][shields-react-router-domain]](https://reactrouter.com/)
+[![React Query][shields-react-query-domain]](https://tanstack.com/query/v4/)
+[![Zustand][shields-zustand-domain]](https://zustand-demo.pmnd.rs/)
 [![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/)
-[![Sass][shields-Sass-domain]](https://sass-lang.com/)
 
-[![Bintray](https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg?maxAge=2592000)](https://bintray.com/asciidoctor/maven/asciidoctorj)
+[shields-react-router-domain]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[shields-react-query-domain]: https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white
+[shields-zustand-domain]: https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+[shields-vite-domain]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[shields-react-domain]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[netlify-domain]: https://api.netlify.com/api/v1/badges/5d5013c3-ec61-4496-8f48-caa7145fb166/deploy-status
+[dependency-graph-domain]: ./dependency-graph-preview.svg
+[build-domain]: https://github.com/sldk-yuri/realworld-react-fsd/actions/workflows/build.yml/badge.svg
+[codecov-domain]: https://codecov.io/gh/sldk-yuri/realworld-react-fsd/branch/master/graph/badge.svg?token=IXE2YRPYK5
+[prettier-domain]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+[license-domain]: https://img.shields.io/badge/license-MIT-green.svg
 
-[![Bintray](https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=3600)](https://bintray.com/blocke/releases/scalajack)
+[![Bintray][https://img.shields.io/bintray/v/asciidoctor/maven/asciidoctorj.svg?maxAge=2592000]](https://bintray.com/asciidoctor/maven/asciidoctorj)
+
+[![Bintray][https://img.shields.io/bintray/v/blocke/releases/scalajack.svg?maxAge=3600]](https://bintray.com/blocke/releases/scalajack)
+
+[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:test@test.com)
 
 ## Стэк технологий
 
