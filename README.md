@@ -33,51 +33,44 @@
 - [Басанг](https://t.me/basang13) - BA (бизнес-аналитик)
 
 ## Getting started / Начало работы
-
-### Установка
-
-Этот проект был разработан с помощью Next.js
-
 Чтобы запустить фронтенд локально:
 
 - Клонируйте этот репозиторий
-- `npm install` - для установки всех зависимостей, описанных в файле package.json.
-- `npm dev` - для запуска сервера разработки Next.
+- `npm install` - для установки всех зависимостей, описанных в файле `package.json`.
+- `npm dev` - для запуска сервера разработки Next.js.
 
 ### Скрипты
 
-`npm dev` — запуск сервера разработки с горячей перезагрузкой.
-`npm build` — сборка проекта. Сгенерированные файлы будут находиться в папке `.next`.
-`npm start` — локальный просмотр сборки.
-`npm lint` — запуск ESLint.
-`npm fix` — запуск Prettier.
+`npm dev` — запуск сервера разработки с горячей перезагрузкой.  
+`npm build` — сборка проекта. Сгенерированные файлы будут находиться в папке `.next`.  
+`npm start` — локальный просмотр сборки.  
+`npm lint` — запуск ESLint.  
+`npm fix` — запуск Prettier.  
 
-[![Feature-Sliced Design][shields-fsd-domain]](https://feature-sliced.design/)
-[![React][shields-react-domain]](https://react.dev/)
+## Технологии
+
+[![Next][nextjs-domain]](https://nextjs.org/)
 [![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/)
-[![Code style: prettier][prettier-domain]](https://github.com/prettier/prettier)
-
-[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F2F2F2&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
-[shields-react-domain]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
-[shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
-[prettier-domain]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-
-[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:test@test.com)
-
-## Стэк технологий
-
-- HTML5
-- Sass / SCSS
-- TypeScript v.5
-- React v.18
-- Next.js v.14
-
-Структура веб-приложения основана на архитектурном подходе **Feature-Sliced Design (FSD)**, который направлен на облегчение сопровождения приложения, его тестирования и масштабирования.
-
-### Ссылки на фреймворки, библиотеки, иконки и шрифты
+[![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=ffffff)](https://sass-lang.com/)
+[![Feature-Sliced Design][shields-fsd-domain]](https://feature-sliced.design/)
 
 - [class.js](https://www.npmjs.com/package/classes) - наследование классов
 - [Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами
 - [ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода
 - [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
 - [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
+
+
+
+[nextjs-domain]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
+[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F0F0F0&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+[shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
+
+
+<!--
+[![React][shields-react-domain]](https://react.dev/)
+[![Code style: prettier][prettier-domain]](https://github.com/prettier/prettier)
+[shields-react-domain]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[prettier-domain]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge
+[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:test@test.com)
+-->
