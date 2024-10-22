@@ -32,46 +32,30 @@
 - [Дмитрий](https://t.me/d_strelen) - SA (системный аналитик)
 - [Басанг](https://t.me/basang13) - BA (бизнес-аналитик)
 
-## Инструкция по сборке и запуску
+## Getting started / Начало работы
 
 ### Установка
 
-Клонировать проект и перейти в каталог `/rosbank_hackaton_frontend`
+Этот проект был разработан с помощью Next.js
 
-```bash
-git clone git@github.com:MaxRMNK/rosbank_hackaton_frontend.git
-cd rosbank_hackaton_frontend
-```
+Чтобы запустить фронтенд локально:
 
-Установить проект и его зависимости
+- Клонируйте этот репозиторий
+- `npm install` - для установки всех зависимостей, описанных в файле package.json.
+- `npm dev` - для запуска сервера разработки Next.
 
-```bash
-npm install
-```
+### Скрипты
 
-### Запуск
+`npm dev` — запуск сервера разработки с горячей перезагрузкой.
+`npm build` — сборка проекта. Сгенерированные файлы будут находиться в папке `.next`.
+`npm start` — локальный просмотр сборки.
+`npm lint` — запуск ESLint.
+`npm fix` — запуск Prettier.
 
-**Режим разработки**
-
-```bash
-npm run dev
-```
-
-**Сборка проекта**
-
-```bash
-npm run build
-```
-
-**Запуск проекта**
-
-```bash
-npm run start
-# or
-npm start
-```
-
-Открыть [http://localhost:3000](http://localhost:3000) в браузере, чтобы увидеть результат.
+[![Feature-Sliced Design][shields-fsd-domain]](https://feature-sliced.design/)
+[![React][shields-react-domain]](https://react.dev/)
+[![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/)
+[![Sass][shields-Sass-domain]](https://sass-lang.com/)
 
 ## Стэк технологий
 
