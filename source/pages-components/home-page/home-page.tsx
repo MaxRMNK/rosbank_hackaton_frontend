@@ -6,6 +6,7 @@ import classes from './styles.module.scss';
 
 import userData from '@/public/user.json';
 import summaryData from '@/public/demo-summary.json';
+
 import taskData from '@/public/demo-task-list.json';
 import teamData from '@/public/demo-team.json';
 import skillData from '@/public/demo-skills.json';
