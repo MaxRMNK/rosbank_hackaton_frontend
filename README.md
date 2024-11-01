@@ -33,6 +33,7 @@
 - [Басанг](https://t.me/basang13) - BA (бизнес-аналитик)
 
 ## Getting started / Начало работы
+
 Чтобы запустить фронтенд локально:
 
 - Клонируйте этот репозиторий
@@ -45,7 +46,7 @@
 `npm build` — сборка проекта. Сгенерированные файлы будут находиться в папке `.next`.  
 `npm start` — локальный просмотр сборки.  
 `npm lint` — запуск ESLint.  
-`npm fix` — запуск Prettier.  
+`npm fix` — запуск Prettier.
 
 ## Технологии
 
@@ -60,12 +61,9 @@
 - [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
 - [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
 
-
-
 [nextjs-domain]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
 [shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F0F0F0&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
 [shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
-
 
 <!--
 [![React][shields-react-domain]](https://react.dev/)
