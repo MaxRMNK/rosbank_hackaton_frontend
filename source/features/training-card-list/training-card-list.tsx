@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeTrainingCardListProps } from './types';
 import { Button } from '@/source/shared/ui/button';
-import { TrainingCard } from '@/source/shared/training-card-list/training-card';
+import { TrainingCard } from '@/source/features/training-card-list/training-card';
 
 export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
   const {

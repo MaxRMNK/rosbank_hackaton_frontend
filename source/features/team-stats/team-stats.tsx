@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeTeamStatsProps } from './types';
-import { TeamTableRow } from '@/source/features/table-team/team-table-row';
+import { TeamTableRow } from '@/source/features/team-stats/team-table-row';
 
 export const TeamStats: React.FC<typeTeamStatsProps> = props => {
   const { teamData, teamLimit, className } = props;

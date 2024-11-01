@@ -59,18 +59,29 @@
 .info {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #000;
+  // justify-content: space-between;
 
   .manager {
-    max-width: 133px;
+    max-width: 130px;
     display: flex;
     flex-direction: column;
     font-size: 14px;
     line-height: 18px;
+    // background-color: #fcc;
+    background-color: rgba(92, 225, 101, 0.5);
 
     .details {
       flex-grow: 2;
       // padding: 4px 0;
     }
+  }
+
+  .links {
+    background-color: rgba(92, 225, 101, 50%);
+    flex-grow: 1;
   }
 }
 
