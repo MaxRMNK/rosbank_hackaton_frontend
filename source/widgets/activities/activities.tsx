@@ -24,29 +24,30 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
 
   const [isOpen, setIsOpen] = React.useState<boolean>(true);
   const contentRef = React.useRef<HTMLDivElement | null>(null);
-  const [blockHeight, setBlockHeight] = React.useState<number>(0);
+  // const [blockHeight, setBlockHeight] = React.useState<number>(0);
 
   const handleChangeVisibility = () => {
     setIsOpen(!isOpen);
   };
 
-  React.useEffect(() => {
-    const handleResize = () => {
-      if (contentRef.current) {
-        setBlockHeight(contentRef.current.scrollHeight);
-      }
-    };
+  // Было нужно для плавного раскрытия блока карточек. Переделал на гридах - 2025-01-03
+  // React.useEffect(() => {
+  //   const handleResize = () => {
+  //     if (contentRef.current) {
+  //       setBlockHeight(contentRef.current.scrollHeight);
+  //     }
+  //   };
 
-    // Let's set the initial size
-    handleResize();
+  //   // Let's set the initial size
+  //   handleResize();
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    // Clearing the event handler
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [isOpen, visibleCardCount]);
+  //   // Clearing the event handler
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, [isOpen, visibleCardCount]);
 
   return (
     <section className={cn(classes.activities)}>
@@ -74,9 +75,9 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
       <div
         ref={contentRef}
         className={cn(classes.cardWrapper, { [classes.open]: isOpen })}
-        style={{
-          maxHeight: isOpen ? `${blockHeight}px` : '0',
-        }}
+        // style={{
+        //   maxHeight: isOpen ? `${blockHeight}px` : '0',
+        // }}
       >
         <TrainingCardList
           taskList={taskList?.slice(0, visibleCardCount)}
