@@ -64,11 +64,16 @@
 }
 
 .cardWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
   overflow: hidden;
-  line-height: 0;
-  transition: all 0.3s;
+  transition: grid-template-rows linear 0.3s;
+  // overflow: hidden;
+  // line-height: 0;
+  // transition: all 0.3s;
 
   &.open {
-    line-height: 27px;
+    grid-template-rows: 1fr;
+    // line-height: 27px;
   }
 }

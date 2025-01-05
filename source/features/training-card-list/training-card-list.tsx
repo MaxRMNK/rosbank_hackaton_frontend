@@ -17,7 +17,7 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
   } = props;
 
   return (
-    <>
+    <div className={cn(classes.trainingCards)}>
       <div className={cn(classes.cardList)}>
         {taskList.map((item, index) => (
           <TrainingCard
@@ -42,6 +42,6 @@ export const TrainingCardList: React.FC<typeTrainingCardListProps> = props => {
           </Button>
         </div>
       )}
-    </>
+    </div>
   );
 };

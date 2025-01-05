@@ -6,7 +6,6 @@ import classes from './styles.module.scss';
 import { typeHeaderProps } from './types';
 
 import { HeaderMenu } from '@/source/features/navigation/header-menu';
-// import { headerMenuProps } from '@/source/features/navigation/header-menu/types';
 import { LogoHeader } from '@/source/shared/logo-header';
 import { HeaderUserInfo } from '@/source/shared/header-user';
 
