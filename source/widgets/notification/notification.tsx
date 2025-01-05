@@ -10,12 +10,12 @@ export const Notification: React.FC<typeNotificationProps> = props => {
   const { title, handleReadMore, handleApprove, handleClose, isClose } = props;
 
   return (
-    <>
-      <div
-        className={cn(classes.notification, {
-          [classes.close]: isClose,
-        })}
-      >
+    <div
+      className={cn(classes.notificationWrapper, {
+        [classes.close]: isClose,
+      })}
+    >
+      <div className={cn(classes.notification)}>
         <div className={cn(classes.message)}>{title}</div>
         <div className={cn(classes.actions)}>
           <Button
@@ -34,8 +34,9 @@ export const Notification: React.FC<typeNotificationProps> = props => {
             Согласовать все
           </Button>
         </div>
-        <button className={cn(classes.closeButton)} onClick={handleClose} />
       </div>
-    </>
+
+      <button className={cn(classes.closeButton)} onClick={handleClose} />
+    </div>
   );
 };
