@@ -1,7 +1,7 @@
 import { LiHTMLAttributes, DetailedHTMLProps } from 'react';
-import { headerMenuLinkWithChildren } from '../types';
+import { headerMenuLinkWithChildren } from '../header-menu/types';
 
 export interface headerMenuLinkProps
   extends DetailedHTMLProps<LiHTMLAttributes<HTMLElement>, HTMLElement> {
-  link: headerMenuLinkWithChildren;
+  links: headerMenuLinkWithChildren;
 }

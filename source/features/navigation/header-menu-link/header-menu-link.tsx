@@ -10,7 +10,7 @@ import Image from 'next/image';
 import arrow from './images/arrow.svg';
 
 export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
-  const { className, link } = props;
+  const { className, links } = props;
 
   const [isOpen, setOpen] = React.useState(false);
 
@@ -24,7 +24,7 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
 
   return (
     <>
-      {link.children ? (
+      {links.children ? (
         <li
           className={cn(className, classes.headerMenuLinkWrapper)}
           // onClick={visable}
@@ -38,17 +38,17 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
               classes.headerMenuDropdown,
             )}
           >
-            {link.title}
+            {links.title}
             <Image src={arrow} alt="" />
           </button>
-          {link.children && (
+          {links.children && (
             <ul
               className={cn(className, classes.headerMenuLinksChildren, {
                 [classes.open]: isOpen,
               })}
               // onMouseLeave={hidden}
             >
-              {link.children.map((link, index) => (
+              {links.children.map((link, index) => (
                 <li
                   key={index}
                   className={cn(className, classes.headerMenuChildrenItems)}
@@ -73,9 +73,9 @@ export const HeaderMenuLink: React.FC<headerMenuLinkProps> = props => {
         <li className={cn(className, classes.headerMenuLinkWrapper)}>
           <Link
             className={cn(className, classes.headerMenuLink)}
-            href={link.link}
+            href={links.link}
           >
-            {link.title}
+            {links.title}
           </Link>
         </li>
       )}
