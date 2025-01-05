@@ -83,8 +83,9 @@ npm run dev
 
 ## Технологии
 
-[![Next][nextjs-domain]](https://nextjs.org/)
 [![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=React&logoColor=000000)](https://react.dev/)
+[![Next][nextjs-domain]](https://nextjs.org/)
 [![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=ffffff)](https://sass-lang.com/)
 [![Feature-Sliced Design][shields-fsd-domain]](https://feature-sliced.design/)
 
@@ -94,22 +95,8 @@ npm run dev
 - [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
 - [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
 
-[nextjs-domain]: https://img.shields.io/badge/Next.js_v.14-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
-[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F0F0F0&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
-[shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
-
-- HTML5
-- Sass / SCSS
-- TypeScript v.5
-- React v.18
-- Next.js v.14
-
 Структура веб-приложения основана на архитектурном подходе **Feature-Sliced Design (FSD)**, который направлен на облегчение сопровождения приложения, его тестирования и масштабирования.
 
-### Ссылки на фреймворки, библиотеки, иконки и шрифты
-
-- [class.js](https://www.npmjs.com/package/classes) - наследование классов
-- [Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами
-- [ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода
-- [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
-- [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
+[nextjs-domain]: https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
+[shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F0F0F0&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
+[shields-typescript-domain]: https://img.shields.io/badge/typescript_5-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
