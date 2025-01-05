@@ -11,7 +11,7 @@ export const HeaderMenu: React.FC<headerMenuProps> = props => {
       <ul className={cn(className, classes.headerMenuWrapper)}>
         {links &&
           links.map((link, index) => (
-            <HeaderMenuLink key={index} link={link} />
+            <HeaderMenuLink key={index} links={link} />
           ))}
       </ul>
     </nav>
