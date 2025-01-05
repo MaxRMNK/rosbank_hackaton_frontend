@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { HeaderMenuLink } from '../header-menu-link';
+import { HeaderMenuLink } from './header-menu-link';
 import { headerMenuProps } from './types';
 
 export const HeaderMenu: React.FC<headerMenuProps> = props => {
