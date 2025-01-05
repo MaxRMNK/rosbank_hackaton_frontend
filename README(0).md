@@ -32,54 +32,21 @@
 - [Дмитрий](https://t.me/d_strelen) - SA (системный аналитик)
 - [Басанг](https://t.me/basang13) - BA (бизнес-аналитик)
 
-## Начало работы
+## Getting started / Начало работы
 
-### Установка
+Чтобы запустить фронтенд локально:
 
-Клонировать проект и перейти в каталог `/rosbank_hackaton_frontend`
+- Клонируйте этот репозиторий
+- `npm install` - для установки всех зависимостей, описанных в файле `package.json`.
+- `npm dev` - для запуска сервера разработки Next.js.
 
-```bash
-git clone git@github.com:MaxRMNK/rosbank_hackaton_frontend.git
-cd rosbank_hackaton_frontend
-```
+### Скрипты
 
-Установить проект и его зависимости
-
-```bash
-npm install
-```
-
-### Запуск в режиме разработки
-
-После любого сохранения исходного кода в приложении страница в браузере будет автоматически обновляться.
-
-```bash
-npm run dev
-```
-
-Открыть [http://localhost:3000](http://localhost:3000) в браузере, чтобы увидеть результат.
-
-`Ctrl + C` - выход из режима разработки.
-
-### Сборка и запуск готового проекта
-
-- Сборка проекта. После выполнения команды в директории `/dist` генерируется оптимизированный проект.
-
-  ```bash
-  npm run build
-  ```
-
-- Запуск собранного проекта.
-
-  ```bash
-  npm run start
-  # or
-  npm start
-  ```
-
-  Открыть [http://localhost:3000](http://localhost:3000) в браузере, чтобы увидеть результат.
-
-  `Ctrl + C` - остановка локального сервера.
+`npm dev` — запуск сервера разработки с горячей перезагрузкой.  
+`npm build` — сборка проекта. Сгенерированные файлы будут находиться в папке `.next`.  
+`npm start` — локальный просмотр сборки.  
+`npm lint` — запуск ESLint.  
+`npm fix` — запуск Prettier.
 
 ## Технологии
 
@@ -94,22 +61,14 @@ npm run dev
 - [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
 - [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
 
-[nextjs-domain]: https://img.shields.io/badge/Next.js_v.14-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
+[nextjs-domain]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=ffffff
 [shields-fsd-domain]: https://img.shields.io/badge/Feature--Sliced-Design?style=for-the-badge&color=F0F0F0&labelColor=262224&logoWidth=10&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAAALFAAACxQGJ1n/vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABISURBVHgB7dKxCQAgDETR0w2cws0cys2cwhEUBbsggikCuVekDHwSQFlYo7Q+8KnmtHdFWMdk2cl5wSsbxGSZw8dm8pX9ZHUTMBUgGU2F718AAAAASUVORK5CYII=
 [shields-typescript-domain]: https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white
 
-- HTML5
-- Sass / SCSS
-- TypeScript v.5
-- React v.18
-- Next.js v.14
-
-Структура веб-приложения основана на архитектурном подходе **Feature-Sliced Design (FSD)**, который направлен на облегчение сопровождения приложения, его тестирования и масштабирования.
-
-### Ссылки на фреймворки, библиотеки, иконки и шрифты
-
-- [class.js](https://www.npmjs.com/package/classes) - наследование классов
-- [Classnames](https://www.npmjs.com/package/classnames) - динамическое управление классами
-- [ESLint](https://www.npmjs.com/package/eslint) — линтер, поиск проблемных паттернов проектирования и кода
-- [Prettier](https://www.npmjs.com/package/prettier) — форматирование кода
-- [Husky](https://www.npmjs.com/package/husky) - проверка кода и исправление ошибок
+<!--
+[![React][shields-react-domain]](https://react.dev/)
+[![Code style: prettier][prettier-domain]](https://github.com/prettier/prettier)
+[shields-react-domain]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[prettier-domain]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge
+[![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=FFFFFF&labelColor=3A3B3C&color=62F1CD)](mailto:test@test.com)
+-->
