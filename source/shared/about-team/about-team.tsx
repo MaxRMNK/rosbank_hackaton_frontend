@@ -20,33 +20,42 @@ export const AboutTeam: React.FC<typeAboutTeamProps> = props => {
 
       <div className={cn(classes.info)}>
         {welcomeData.managers &&
-          welcomeData.managers.map((itemList, index) => (
-            <div className={cn(classes.manager)} key={index}>
-              <h3 className={cn(classes.infoTitle)}>{itemList.jobPosition}</h3>
-              <TeamMember
-                className={cn(classes.details)}
-                photo={itemList.photo}
-                firstName={itemList.firstName}
-                lastName={itemList.lastName}
-              />
-            </div>
-          ))}
+          welcomeData.managers.map(
+            (itemList, index) =>
+              // При редизайне решили оставить только одного - первого из списка
+              index === 0 && (
+                <div className={cn(classes.manager)} key={index}>
+                  <h3 className={cn(classes.infoTitle)}>
+                    {itemList.jobPosition}
+                  </h3>
+                  <TeamMember
+                    className={cn(classes.details)}
+                    photo={itemList.photo}
+                    firstName={itemList.firstName}
+                    lastName={itemList.lastName}
+                  />
+                </div>
+              ),
+          )}
 
         <div className={cn(classes.links)}>
           <h3 className={cn(classes.infoTitle)}>Ссылки</h3>
           <div className={cn(classes.linksList)}>
             {welcomeData.links &&
-              welcomeData.links.map((itemList, index) => (
-                <Link
-                  href={itemList.link}
-                  className={cn(classes.link, classes[itemList.name])}
-                  target="_blank"
-                  rel="nofollow noindex noopener"
-                  key={index}
-                >
-                  {itemList.title}
-                </Link>
-              ))}
+              welcomeData.links.map(
+                (itemList, index) =>
+                  index <= 1 && (
+                    <Link
+                      href={itemList.link}
+                      className={cn(classes.link, classes[itemList.name])}
+                      target="_blank"
+                      rel="nofollow noindex noopener"
+                      key={index}
+                    >
+                      {itemList.title}
+                    </Link>
+                  ),
+              )}
           </div>
         </div>
       </div>

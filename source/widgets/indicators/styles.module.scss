@@ -1,6 +1,7 @@
 .indicators {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  // grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 25% auto auto;
   gap: 30px;
   padding: 0 100px 60px 100px;
   width: 100%;
@@ -9,6 +10,7 @@
 .busFactor {
   padding: 30px;
   border-radius: 12px;
+  border: 2px solid var(--red-color);
   background-color: var(--white-smoke-color);
   color: var(--grey-dark-color);
   display: flex;
@@ -33,8 +35,9 @@
 
   .subtitle {
     font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.01px;
+    line-height: 21px;
+    text-wrap: balance;
+    // letter-spacing: -0.01px;
   }
 
   &.alert {
