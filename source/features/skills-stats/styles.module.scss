@@ -71,11 +71,14 @@
   }
 
   .users {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px auto;
-    background-image: url('./images/users-three.png');
+    width: 20px;
+    height: 20px;
+    // user-select: none;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 20px auto;
+    background-color: var(--grey-dark-color);
+    mask-image: url('./images/users-three-grey.svg');
   }
 }
 
