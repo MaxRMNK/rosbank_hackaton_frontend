@@ -17,48 +17,63 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // align-items: flex-end;
   margin: 0 0 10px;
 }
 
 .tabs {
+  display: flex;
+
   .tab {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     margin: 0;
-    padding: 10px 14px 10px 46px;
-    border: 1px solid var(--grey-light-color);
-    box-sizing: border-box;
-    color: var(--grey-dark-color);
+    padding: 8px 16px;
+    min-width: 144px;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.005px;
+    letter-spacing: 0.5%;
     font-weight: 600;
-    background-repeat: no-repeat;
-    background-position: left 16px center;
-    background-size: 24px auto;
-    background-clip: padding-box;
-    background-color: var(--white-color);
     cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-light-color);
+    color: var(--grey-dark-color);
+    background-color: var(--white-color);
 
     &.active {
-      background-color: var(--red-color);
       color: var(--white-color);
       border-color: var(--red-color);
+      background-color: var(--red-color);
+
+      .icon {
+        background-color: var(--white-color);
+      }
     }
 
     &.team {
       border-radius: 12px 0 0 12px;
-      background-image: url('./images/users-three24.png');
-
-      &.active {
-        background-image: url('./images/users-three-white24.png');
-      }
     }
 
     &.skills {
       border-radius: 0 12px 12px 0;
-      background-image: url('./images/pencil-ruler24.png');
+    }
 
-      &.active {
-        background-image: url('./images/pencil-ruler-white24.png');
+    .icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: 24px auto;
+      background-color: var(--grey-dark-color);
+
+      &.iconTeam {
+        mask-image: url('./images/users-three-white.svg');
+      }
+
+      &.iconSkills {
+        mask-image: url('./images/pencil-ruler-white.svg');
       }
     }
   }
@@ -68,20 +83,15 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
-  letter-spacing: 0.005px;
+  letter-spacing: 0.5%;
   padding-right: 24px;
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 20px auto;
   background-clip: padding-box;
-  background-image: url('./images/link-icon.png');
+  background-image: url('./images/external-link.svg');
 
   &:hover {
     text-decoration: underline;
   }
 }
-
-// .tabContent {}
-// .activeTab {}
-// .teamTab {}
-// .skillsTab {}

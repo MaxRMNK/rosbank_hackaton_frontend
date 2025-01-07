@@ -28,6 +28,7 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
             })}
             onClick={() => handleTabClick('team')}
           >
+            <span className={cn(classes.icon, classes.iconTeam)}></span>
             Сотрудники
           </button>
           <button
@@ -36,6 +37,7 @@ export const KeyIndicators: React.FC<typeKeyIndicatorsProps> = props => {
             })}
             onClick={() => handleTabClick('skills')}
           >
+            <span className={cn(classes.icon, classes.iconSkills)}></span>
             Навыки
           </button>
         </div>
