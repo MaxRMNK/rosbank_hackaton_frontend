@@ -41,38 +41,39 @@
     color: var(--grey-dark-color);
     background-color: var(--white-color);
 
-    &.active {
-      color: var(--white-color);
-      border-color: var(--red-color);
-      background-color: var(--red-color);
-
-      .icon {
-        background-color: var(--white-color);
-      }
-    }
-
-    &.team {
-      border-radius: 12px 0 0 12px;
-    }
-
-    &.skills {
-      border-radius: 0 12px 12px 0;
-    }
-
-    .icon {
-      display: inline-block;
+    &::before {
+      content: '';
+      // display: inline-block;
       width: 24px;
       height: 24px;
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: 24px auto;
       background-color: var(--grey-dark-color);
+    }
 
-      &.iconTeam {
+    &.active {
+      color: var(--white-color);
+      border-color: var(--red-color);
+      background-color: var(--red-color);
+
+      &::before {
+        background-color: var(--white-color);
+      }
+    }
+
+    &.team {
+      border-radius: 12px 0 0 12px;
+
+      &::before {
         mask-image: url('./images/users-three-white.svg');
       }
+    }
 
-      &.iconSkills {
+    &.skills {
+      border-radius: 0 12px 12px 0;
+
+      &::before {
         mask-image: url('./images/pencil-ruler-white.svg');
       }
     }
@@ -84,12 +85,27 @@
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.5%;
-  padding-right: 24px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 20px auto;
-  background-clip: padding-box;
-  background-image: url('./images/external-link.svg');
+  // padding-right: 24px;
+  // background-repeat: no-repeat;
+  // background-position: right center;
+  // background-size: 20px auto;
+  // background-clip: padding-box;
+  // background-image: url('./images/external-link.svg');
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 20px auto;
+    mask-image: url('./images/external-link.svg');
+    background-color: var(--red-color);
+  }
 
   &:hover {
     text-decoration: underline;
