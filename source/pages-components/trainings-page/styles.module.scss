@@ -1,3 +1,7 @@
+.main {
+  width: 100%;
+}
+
 .activities {
   padding: 0 100px 100px 100px;
   width: 100%;
@@ -51,10 +55,10 @@
   background-position: left center;
   background-size: 16px auto;
   background-clip: padding-box;
-  background-image: url('./images/show-icon.svg');
+  // background-image: url('./images/show-icon.svg');
 
   &.show {
-    background-image: url('./images/hide-icon.svg');
+    // background-image: url('./images/hide-icon.svg');
   }
 
   &:hover {
@@ -64,16 +68,11 @@
 }
 
 .cardWrapper {
-  display: grid;
-  grid-template-rows: 0fr;
   overflow: hidden;
-  transition: grid-template-rows linear 0.3s;
-  // overflow: hidden;
-  // line-height: 0;
-  // transition: all 0.3s;
+  line-height: 0;
+  transition: all 0.3s;
 
   &.open {
-    grid-template-rows: 1fr;
-    // line-height: 27px;
+    line-height: 27px;
   }
 }

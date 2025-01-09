@@ -20,9 +20,9 @@
   }
 
   .subtitle {
-    margin: 0 0 10px;
-    font-size: 12px;
-    line-height: 22px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 21px;
     color: var(--grey-dark-color);
   }
 
@@ -34,11 +34,13 @@
   }
 
   .item {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.005px;
     margin: 0 0 12px;
     padding: 0 0 0 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -1.5%;
+    // white-space: nowrap;
+    // overflow: hidden;
 
     background-image: url('./images/marker.png');
     background-repeat: no-repeat;

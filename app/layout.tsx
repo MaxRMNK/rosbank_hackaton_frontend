@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { manrope } from '@/source/app/fonts/fonts';
 import '@/source/app/styles/global.css';
-// import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Хакатон Росбанк | Команда 6',

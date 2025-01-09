@@ -1,7 +1,7 @@
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { headerMenuProps } from './types';
 import { HeaderMenuLink } from './header-menu-link';
+import { headerMenuProps } from './types';
 
 export const HeaderMenu: React.FC<headerMenuProps> = props => {
   const { className, links } = props;
@@ -11,7 +11,7 @@ export const HeaderMenu: React.FC<headerMenuProps> = props => {
       <ul className={cn(className, classes.headerMenuWrapper)}>
         {links &&
           links.map((link, index) => (
-            <HeaderMenuLink key={index} link={link} />
+            <HeaderMenuLink key={index} links={link} />
           ))}
       </ul>
     </nav>
