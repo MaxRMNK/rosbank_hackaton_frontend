@@ -56,7 +56,12 @@ export const Activities: React.FC<typeActivitiesProps> = props => {
           <h2 className={cn(classes.title)}>Рекомендованные активности</h2>
           <p className={cn(classes.description)}>
             Ниже собраны некоторые учебные материалы из нашего{' '}
-            <Link href={'/404'} className={cn(classes.link)}>
+            <Link
+              href={'/404'}
+              className={cn(classes.link)}
+              target="_blank"
+              rel="noopener"
+            >
               Учебного центра
             </Link>
             , а также HR-активности, которые помогут в развитии компетенций в

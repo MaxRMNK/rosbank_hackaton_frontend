@@ -59,19 +59,19 @@
 .info {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  // background-color: #000;
-  // justify-content: space-between;
+  // width: 100%;
 
   .manager {
-    max-width: 130px;
+    flex-grow: 2;
+    flex-basis: 130px;
+    max-width: 250px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     font-size: 14px;
     line-height: 18px;
-    // background-color: #fcc;
-    // background-color: rgba(92, 225, 101, 0.5);
 
     .details {
       flex-grow: 2;
@@ -80,13 +80,12 @@
   }
 
   .links {
-    // background-color: rgba(92, 225, 101, 50%);
-    flex-grow: 1;
+    // margin-left: auto;
+    flex-shrink: 0;
   }
 }
 
 .linksList {
-  // flex-grow: 2;
   display: flex;
   gap: 10px;
 
