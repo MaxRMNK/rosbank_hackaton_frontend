@@ -17,7 +17,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // align-items: flex-end;
   margin: 0 0 10px;
 }
 
@@ -43,7 +42,6 @@
 
     &::before {
       content: '';
-      // display: inline-block;
       width: 24px;
       height: 24px;
       mask-repeat: no-repeat;
@@ -93,6 +91,7 @@
   // background-image: url('./images/external-link.svg');
 
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 5px;
 
